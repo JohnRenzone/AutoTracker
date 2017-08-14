@@ -1,0 +1,2 @@
+class RoofColor < Color
+end

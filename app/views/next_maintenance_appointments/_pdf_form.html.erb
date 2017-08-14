@@ -1,0 +1,31 @@
+<table width="100%" border="0"  cellspacing="0" cellpadding="0"   style="border-collapse: collapse;height: 100%;border: 1px solid black;">
+  <tbody>
+  <tr>
+    <td colspan="7" class="headcell3">Your Next Maintenance Appointment</td>
+  </tr>
+  <tr>
+    <td colspan="7"><input class="inputUnderline"  id="nextM2"  style="width:100%" type="text" value= <%= @vehicle_report_card.next_maintenance_appointment[:service_description] %>></td>
+  </tr>
+  <tr>
+    <td colspan="7"><p>Next Maintenance Service - Description</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input class="inputUnderline"  id="maintainSer1"  style="width:100%" value= <%= @vehicle_report_card.next_maintenance_appointment[:appointment_date] %>></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td><input class="inputUnderline"  id="maintainSer3"  style="width:100%"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p>Next Apointment Date (MM/DD/YY)</p></td>
+    <td>&nbsp;</td>
+    <td><p></p></td>
+    <td>&nbsp;</td>
+    <td><p>Time</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody>
+</table>

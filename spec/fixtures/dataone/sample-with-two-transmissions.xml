@@ -1,0 +1,538 @@
+<decoded_data>
+  <decoder_messages>
+    <service_provider>DataOne Software, Inc.</service_provider>
+    <decoder_version>7.0.1</decoder_version>
+    <decoder_errors/>
+  </decoder_messages>
+  <query_responses>
+    <query_response identifier="Request-Sample" transaction_id="T5B9D407B7D014D79C0518066FD197EE9E43A828C">
+      <query_error>
+        <error_code/>
+        <error_message/>
+      </query_error>
+      <us_market_data>
+        <common_us_data>
+          <basic_data>
+            <market>US Light-Duty</market>
+            <year>1988</year>
+            <make>Chevrolet</make>
+            <model>Beretta</model>
+            <trim>Base</trim>
+            <vehicle_type>Car</vehicle_type>
+            <body_type>Coupe</body_type>
+            <body_subtype/>
+            <oem_body_style>Coupe</oem_body_style>
+            <doors>2</doors>
+            <oem_doors>2</oem_doors>
+            <model_number>1LV37</model_number>
+            <package_code/>
+            <drive_type>FWD</drive_type>
+            <brake_system/>
+            <restraint_type>ACTIVE BELTS</restraint_type>
+            <country_of_manufacture/>
+            <plant>Linden, New Jersey</plant>
+            <glider/>
+            <chassis_type/>
+          </basic_data>
+          <pricing>
+            <msrp>10535</msrp>
+            <invoice_price>0</invoice_price>
+            <destination_charge>0</destination_charge>
+            <gas_guzzler_tax>0</gas_guzzler_tax>
+          </pricing>
+          <engines>
+            <engine name="2.8L V6 OHV 12V FI Engine" brand="" marketing_name="" engine_id="256789">
+              <availability>Installed</availability>
+              <aspiration>N/A</aspiration>
+              <block_type>V</block_type>
+              <bore>0</bore>
+              <cam_type>OHV</cam_type>
+              <compression>0</compression>
+              <cylinders>6</cylinders>
+              <displacement>2.8</displacement>
+              <fuel_induction>FI</fuel_induction>
+              <fuel_quality>0</fuel_quality>
+              <fuel_type>G</fuel_type>
+              <msrp>0</msrp>
+              <invoice_price>0</invoice_price>
+              <marketing_name/>
+              <max_hp>0</max_hp>
+              <max_hp_at>0</max_hp_at>
+              <max_payload/>
+              <max_torque>0</max_torque>
+              <max_torque_at>0</max_torque_at>
+              <oil_capacity>0</oil_capacity>
+              <order_code/>
+              <redline>0</redline>
+              <stroke>0</stroke>
+              <valve_timing/>
+              <valves>12</valves>
+            </engine>
+          </engines>
+          <transmissions>
+            <transmission name="5-Speed Manual" brand="" marketing_name="" transmission_id="213987">
+              <availability>Default</availability>
+              <type>M</type>
+              <detail_type/>
+              <gears>5</gears>
+              <order_code/>
+              <msrp>0</msrp>
+              <invoice_price>0</invoice_price>
+            </transmission>
+            <transmission name="3-Speed Automatic" brand="" marketing_name="" transmission_id="225645">
+              <availability>Optional</availability>
+              <type>A</type>
+              <detail_type/>
+              <gears>3</gears>
+              <order_code/>
+              <msrp>0</msrp>
+              <invoice_price>0</invoice_price>
+            </transmission>
+          </transmissions>
+          <specifications>
+            <category name="Drive Type">
+              <specification name="Drive Type">FWD</specification>
+            </category>
+            <category name="Measurements of Size and Shape">
+              <specification name="Height">55</specification>
+              <specification name="Length">187</specification>
+              <specification name="Wheelbase">103.3</specification>
+              <specification name="Width">68</specification>
+            </category>
+            <category name="Measurements of Weight">
+              <specification name="Curb Weight">2608</specification>
+            </category>
+            <category name="Seating">
+              <specification name="Head Room 1st Row">37</specification>
+              <specification name="Head Room 2nd Row/Rear">36</specification>
+              <specification name="Hip Room 1st Row">53</specification>
+              <specification name="Hip Room 2nd Row/Rear">53</specification>
+              <specification name="Leg Room 1st Row">43</specification>
+              <specification name="Leg Room 2nd Row/Rear">34</specification>
+              <specification name="Max Seating">5</specification>
+              <specification name="Shoulder Room 1st Row">55</specification>
+              <specification name="Shoulder Room 2nd Row/Rear">55</specification>
+              <specification name="Standard Seating">5</specification>
+            </category>
+            <category name="Wheels and Tires">
+              <specification name="Front Wheel Diameter">14.0</specification>
+              <specification name="Rear Wheel Diameter">14.0</specification>
+            </category>
+          </specifications>
+          <installed_equipment>
+            <category name="Audio System">
+              <equipment name="Radio">
+                <value installed_equipment_id="403418">AM/FM</value>
+              </equipment>
+            </category>
+            <category name="Brakes">
+              <equipment name="Power brakes">
+                <value installed_equipment_id="5000000425"/>
+              </equipment>
+            </category>
+            <category name="Convenience Features">
+              <equipment name="Center console">
+                <value installed_equipment_id="600271"/>
+              </equipment>
+              <equipment name="Power steering">
+                <value installed_equipment_id="5000000054"/>
+              </equipment>
+            </category>
+            <category name="Instrumentation">
+              <equipment name="Clock">
+                <value installed_equipment_id="200003324"/>
+              </equipment>
+              <equipment name="Gauge">
+                <value installed_equipment_id="5000000044">tachometer</value>
+              </equipment>
+            </category>
+            <category name="Lights">
+              <equipment name="Exterior entry lights">
+                <value installed_equipment_id="5000001001"/>
+              </equipment>
+            </category>
+            <category name="Seats">
+              <equipment name="Front seat type">
+                <value installed_equipment_id="401673">bucket</value>
+              </equipment>
+              <equipment name="Upholstery">
+                <value installed_equipment_id="403138">cloth</value>
+              </equipment>
+            </category>
+            <category name="Suspension">
+              <equipment name="Tuned suspension">
+                <value installed_equipment_id="600689">sport</value>
+              </equipment>
+            </category>
+            <category name="Tires and Rims">
+              <equipment name="Tire type">
+                <value installed_equipment_id="30414"/>
+              </equipment>
+              <equipment name="Wheel diameter">
+                <value installed_equipment_id="602440">14 inch</value>
+              </equipment>
+            </category>
+            <category name="Windows">
+              <equipment name="Tinted glass">
+                <value installed_equipment_id="5000000140"/>
+              </equipment>
+            </category>
+          </installed_equipment>
+          <optional_equipment>
+            <category name="Locks">
+              <option name="Power Door Locks" option_id="300002484" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+            </category>
+            <category name="Windows">
+              <option name="Power Windows" option_id="300002485" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+              <option name="Rear Defogger" option_id="300002679" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+            </category>
+            <category name="Audio System">
+              <option name="Cassette" option_id="300005546" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+              <option name="Radio - AM/FM" option_id="300005583" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+            </category>
+            <category name="Convenience Features">
+              <option name="Steering wheel - tilt-only" option_id="300005631" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+              <option name="Cruise control" option_id="300005638" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+            </category>
+            <category name="Air Conditioning">
+              <option name="Front air conditioning" option_id="300005650" order_code="" installed="UK" fleet="UK">
+                <install_type/>
+                <invoice_price>0</invoice_price>
+                <msrp>0</msrp>
+                <description>
+                  <![CDATA[ ]]>
+                </description>
+              </option>
+            </category>
+          </optional_equipment>
+          <colors>
+            <exterior_colors/>
+            <interior_colors/>
+            <roof_colors/>
+          </colors>
+          <safety_equipment>
+            <abs_two_wheel/>
+            <abs_four_wheel/>
+            <airbags_front_driver/>
+            <airbags_front_passenger/>
+            <airbags_side_impact/>
+            <airbags_side_curtain/>
+            <brake_assist/>
+            <daytime_running_lights/>
+            <electronic_stability_control/>
+            <electronic_traction_control/>
+            <tire_pressure_monitoring_system/>
+            <rollover_stability_control/>
+          </safety_equipment>
+          <warranties/>
+          <epa_fuel_efficiency>
+            <epa_mpg_record engine_id="256789" transmission_id="213987" fuel_type="Gasoline" fuel_grade="">
+              <city>17</city>
+              <highway>27</highway>
+              <combined>20</combined>
+            </epa_mpg_record>
+            <epa_mpg_record engine_id="256789" transmission_id="225645" fuel_type="Gasoline" fuel_grade="">
+              <city>18</city>
+              <highway>24</highway>
+              <combined>20</combined>
+            </epa_mpg_record>
+          </epa_fuel_efficiency>
+          <epa_green_scores/>
+          <nhtsa_crash_test_ratings>
+            <overall_stars/>
+            <front_crash_overall_stars/>
+            <front_crash_driver_stars/>
+            <front_crash_passenger_stars/>
+            <side_crash_overall_stars/>
+            <side_barrier_overall_stars/>
+            <side_barrier_driver_stars/>
+            <side_barrier_passenger_stars/>
+            <side_pole_driver_stars/>
+            <side_combined_front_stars/>
+            <side_combined_rear_stars/>
+            <rollover_stars/>
+            <front_crash_driver_comment/>
+            <front_crash_passenger_comment/>
+            <side_barrier_driver_comment/>
+            <side_barrier_passenger_comment/>
+            <rollover_comment/>
+          </nhtsa_crash_test_ratings>
+          <awards_accolades/>
+        </common_us_data>
+        <us_styles count="1">
+          <style name="2dr Coupe" vehicle_id="100004615" complete="Y" market="US Light-Duty" fleet="N">
+            <basic_data>
+              <market>US Light-Duty</market>
+              <year>1988</year>
+              <make>Chevrolet</make>
+              <model>Beretta</model>
+              <trim>Base</trim>
+              <vehicle_type>Car</vehicle_type>
+              <body_type>Coupe</body_type>
+              <body_subtype/>
+              <oem_body_style>Coupe</oem_body_style>
+              <doors>2</doors>
+              <oem_doors>2</oem_doors>
+              <model_number>1LV37</model_number>
+              <package_code/>
+              <drive_type>FWD</drive_type>
+              <brake_system/>
+              <restraint_type>ACTIVE BELTS</restraint_type>
+              <country_of_manufacture/>
+              <plant>Linden, New Jersey</plant>
+              <glider/>
+              <chassis_type/>
+            </basic_data>
+            <pricing>
+              <msrp>10535</msrp>
+              <invoice_price>0</invoice_price>
+              <destination_charge>0</destination_charge>
+              <gas_guzzler_tax>0</gas_guzzler_tax>
+            </pricing>
+            <engines>
+              <engine name="2.8L V6 OHV 12V FI Engine" brand="" marketing_name="" engine_id="256789">
+                <availability>Installed</availability>
+                <aspiration>N/A</aspiration>
+                <block_type>V</block_type>
+                <bore>0</bore>
+                <cam_type>OHV</cam_type>
+                <compression>0</compression>
+                <cylinders>6</cylinders>
+                <displacement>2.8</displacement>
+                <fuel_induction>FI</fuel_induction>
+                <fuel_quality>0</fuel_quality>
+                <fuel_type>G</fuel_type>
+                <msrp>0</msrp>
+                <invoice_price>0</invoice_price>
+                <marketing_name/>
+                <max_hp>0</max_hp>
+                <max_hp_at>0</max_hp_at>
+                <max_payload/>
+                <max_torque>0</max_torque>
+                <max_torque_at>0</max_torque_at>
+                <oil_capacity>0</oil_capacity>
+                <order_code/>
+                <redline>0</redline>
+                <stroke>0</stroke>
+                <valve_timing/>
+                <valves>12</valves>
+              </engine>
+            </engines>
+            <transmissions>
+              <transmission name="3-Speed Automatic" brand="" marketing_name="" transmission_id="225645">
+                <availability>Optional</availability>
+                <type>A</type>
+                <detail_type/>
+                <gears>3</gears>
+                <order_code/>
+                <msrp>0</msrp>
+                <invoice_price>0</invoice_price>
+              </transmission>
+              <transmission name="5-Speed Manual" brand="" marketing_name="" transmission_id="213987">
+                <availability>Default</availability>
+                <type>M</type>
+                <detail_type/>
+                <gears>5</gears>
+                <order_code/>
+                <msrp>0</msrp>
+                <invoice_price>0</invoice_price>
+              </transmission>
+            </transmissions>
+            <specifications>
+              <category name="Drive Type">
+                <specification name="Drive Type">FWD</specification>
+              </category>
+              <category name="Measurements of Size and Shape">
+                <specification name="Height">55</specification>
+                <specification name="Length">187</specification>
+                <specification name="Wheelbase">103.3</specification>
+                <specification name="Width">68</specification>
+              </category>
+              <category name="Measurements of Weight">
+                <specification name="Curb Weight">2608</specification>
+              </category>
+              <category name="Seating">
+                <specification name="Head Room 1st Row">37</specification>
+                <specification name="Head Room 2nd Row/Rear">36</specification>
+                <specification name="Hip Room 1st Row">53</specification>
+                <specification name="Hip Room 2nd Row/Rear">53</specification>
+                <specification name="Leg Room 1st Row">43</specification>
+                <specification name="Leg Room 2nd Row/Rear">34</specification>
+                <specification name="Max Seating">5</specification>
+                <specification name="Shoulder Room 1st Row">55</specification>
+                <specification name="Shoulder Room 2nd Row/Rear">55</specification>
+                <specification name="Standard Seating">5</specification>
+              </category>
+              <category name="Wheels and Tires">
+                <specification name="Front Wheel Diameter">14.0</specification>
+                <specification name="Rear Wheel Diameter">14.0</specification>
+              </category>
+            </specifications>
+            <installed_equipment>
+              <category name="Audio System">
+                <equipment name="Radio">
+                  <value installed_equipment_id="403418">AM/FM</value>
+                </equipment>
+              </category>
+              <category name="Brakes">
+                <equipment name="Power brakes">
+                  <value installed_equipment_id="5000000425"/>
+                </equipment>
+              </category>
+              <category name="Convenience Features">
+                <equipment name="Center console">
+                  <value installed_equipment_id="600271"/>
+                </equipment>
+                <equipment name="Power steering">
+                  <value installed_equipment_id="5000000054"/>
+                </equipment>
+              </category>
+              <category name="Instrumentation">
+                <equipment name="Clock">
+                  <value installed_equipment_id="200003324"/>
+                </equipment>
+                <equipment name="Gauge">
+                  <value installed_equipment_id="5000000044">tachometer</value>
+                </equipment>
+              </category>
+              <category name="Lights">
+                <equipment name="Exterior entry lights">
+                  <value installed_equipment_id="5000001001"/>
+                </equipment>
+              </category>
+              <category name="Seats">
+                <equipment name="Front seat type">
+                  <value installed_equipment_id="401673">bucket</value>
+                </equipment>
+                <equipment name="Upholstery">
+                  <value installed_equipment_id="403138">cloth</value>
+                </equipment>
+              </category>
+              <category name="Suspension">
+                <equipment name="Tuned suspension">
+                  <value installed_equipment_id="600689">sport</value>
+                </equipment>
+              </category>
+              <category name="Tires and Rims">
+                <equipment name="Tire type">
+                  <value installed_equipment_id="30414"/>
+                </equipment>
+                <equipment name="Wheel diameter">
+                  <value installed_equipment_id="602440">14 inch</value>
+                </equipment>
+              </category>
+              <category name="Windows">
+                <equipment name="Tinted glass">
+                  <value installed_equipment_id="5000000140"/>
+                </equipment>
+              </category>
+            </installed_equipment>
+            <colors>
+              <exterior_colors/>
+              <interior_colors/>
+              <roof_colors/>
+            </colors>
+            <safety_equipment>
+              <abs_two_wheel/>
+              <abs_four_wheel/>
+              <airbags_front_driver/>
+              <airbags_front_passenger/>
+              <airbags_side_impact/>
+              <airbags_side_curtain/>
+              <brake_assist/>
+              <daytime_running_lights/>
+              <electronic_stability_control/>
+              <electronic_traction_control/>
+              <tire_pressure_monitoring_system/>
+              <rollover_stability_control/>
+            </safety_equipment>
+            <warranties/>
+            <epa_fuel_efficiency>
+              <epa_mpg_record engine_id="256789" transmission_id="213987" fuel_type="Gasoline" fuel_grade="">
+                <city>17</city>
+                <highway>27</highway>
+                <combined>20</combined>
+              </epa_mpg_record>
+              <epa_mpg_record engine_id="256789" transmission_id="225645" fuel_type="Gasoline" fuel_grade="">
+                <city>18</city>
+                <highway>24</highway>
+                <combined>20</combined>
+              </epa_mpg_record>
+            </epa_fuel_efficiency>
+            <epa_green_scores/>
+            <nhtsa_crash_test_ratings>
+              <overall_stars/>
+              <front_crash_overall_stars/>
+              <front_crash_driver_stars/>
+              <front_crash_passenger_stars/>
+              <side_crash_overall_stars/>
+              <side_barrier_overall_stars/>
+              <side_barrier_driver_stars/>
+              <side_barrier_passenger_stars/>
+              <side_pole_driver_stars/>
+              <side_combined_front_stars/>
+              <side_combined_rear_stars/>
+              <rollover_stars/>
+              <front_crash_driver_comment/>
+              <front_crash_passenger_comment/>
+              <side_barrier_driver_comment/>
+              <side_barrier_passenger_comment/>
+              <rollover_comment/>
+            </nhtsa_crash_test_ratings>
+            <awards_accolades/>
+          </style>
+        </us_styles>
+      </us_market_data>
+      <supplemental_data/>
+    </query_response>
+  </query_responses>
+</decoded_data>

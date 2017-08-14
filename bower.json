@@ -1,0 +1,8 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "noty": "latest",
+    "jquery-validation": "latest",
+    "font-awesome": "^4.7.0"
+  }
+}

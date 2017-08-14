@@ -1,0 +1,23 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 SCHEDULED MAINTENANCE
+  .col-md-12
+    .row.pB10
+      .col-md-2.col-xs-2.col-sm-2.mB10
+        %strong= t('due')
+      .col-md-8.col-xs-8.col-sm-8.mB10
+        &nbsp;
+      .col-md-2.col-xs-2.col-sm-2
+        %strong.text-muted= t('serviced')
+  - ScheduledMaintenanceItem::ITEMS.each do |item|
+    .col-md-12.xs_padding_01500
+      .row.pB10
+        .col-md-2.col-xs-2.col-sm-2.xs_padding_0
+          = check_box_block f, item[0]
+        .col-md-8.col-xs-8.col-sm-8.mB10
+          = f.label item[0], class: 'mL10'
+        .col-md-2.col-xs-2.col-sm-2
+          = check_box_block f, item[1]
+  .col-md-12
+    %p.small.text-muted.pT30
+      *This is only a partial list of vehicle maintenance items and is NOT all-inclusive. Please consult your owner's Manual for vehicle-specific maintenance requirements.

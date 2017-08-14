@@ -1,0 +1,199 @@
+= f.fields_for :tire_wear_indicate do |_f|
+  %table{:border => "1", :cellpadding => "0", :cellspacing => "0", :style => "height: 100%;  ", :width => "100%"}
+    %tbody
+      %tr
+        %td.headcell2{:colspan => "4"} TIRE WEAR INDICATES
+      %tr
+        %td  
+        %td.subheadcell SERV
+        %td  
+        %td.subheadcell SERV
+      %tr
+        %td
+          - if @vehicle_report_card.tire_wear_indicate[:alignment_check_needed]
+            %input#tire1.css-checkboxGrey{:checked => "checked", :name => "tire1", :type => "checkbox"}/
+            %label.css-labelGrey{:for => "tire1"}
+          - else
+            %input#tire1.css-checkboxGrey{:name => "tire1", :type => "checkbox"}/
+            %label.css-labelGrey{:for => "tire1"}
+          %p Alignment check needed:
+        %td.centertd
+          = pdf_checkbox(_f, :alignment_check_serviced)
+        %td
+          - if @vehicle_report_card.tire_wear_indicate[:wheel_balance_needed]
+            %input#tire3.css-checkboxGrey{:checked => "checked", :name => "tire3", :type => "checkbox"}/
+            %label.css-labelGrey{:for => "tire3"}
+          - else
+            %input#tire3.css-checkboxGrey{:name => "tire3", :type => "checkbox"}/
+            %label.css-labelGrey{:for => "tire3"}
+          %p Wheel balance needed:
+        %td.centertd
+          = pdf_checkbox(_f, :wheel_balance_serviced)
+      %tr
+        %td.headcell2 LEFT FRONT
+        %td.subheadcell SERV
+        %td.headcell2 RIGHT FRONT
+        %td.subheadcell SERV
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_front_tread_depth_legend, 'g')
+                = pdf_legend(_f, :left_front_tread_depth_legend, 'y')
+                = pdf_legend(_f, :left_front_tread_depth_legend, 'r')
+              %td
+                %p
+                  The Tread Depth:
+                  = succeed "mm" do
+                    %label= @vehicle_report_card.tire_wear_indicate[:left_front_tread_depth]
+        %td.centertd
+          = pdf_checkbox(_f, :left_front_tread_depth_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_front_tread_depth_legend, 'g')
+                = pdf_legend(_f, :right_front_tread_depth_legend, 'y')
+                = pdf_legend(_f, :right_front_tread_depth_legend, 'r')
+              %td
+                %p
+                  The Tread Depth:
+                  = succeed "mm" do
+                    %label= @vehicle_report_card.tire_wear_indicate[:right_front_tread_depth]
+        %td.centertd
+          = pdf_checkbox(_f, :right_front_tread_depth_serviced)
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_front_pattern_legend, 'g')
+                = pdf_legend(_f, :left_front_pattern_legend, 'y')
+                = pdf_legend(_f, :left_front_pattern_legend, 'r')
+              %td
+                %p Tire Wear Pattern / Damage
+        %td.centertd
+          = pdf_checkbox(_f, :left_front_pattern_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_front_pattern_legend, 'g')
+                = pdf_legend(_f, :right_front_pattern_legend, 'y')
+                = pdf_legend(_f, :right_front_pattern_legend, 'r')
+              %td
+                %p Tire Wear Pattern / Damage
+        %td.centertd
+          = pdf_checkbox(_f, :right_front_pattern_serviced)
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_front_psi_legend, 'g')
+                = pdf_legend(_f, :left_front_psi_legend, 'y')
+                = pdf_legend(_f, :left_front_psi_legend, 'r')
+              %td
+                %p Tire Pressure set to factory-recommended PSI
+        %td.centertd
+          = pdf_checkbox(_f, :left_front_psi_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_front_psi_legend, 'g')
+                = pdf_legend(_f, :right_front_psi_legend, 'y')
+                = pdf_legend(_f, :right_front_psi_legend, 'r')
+              %td
+                %p Tire Pressure set to factory-recommended PSI
+        %td.centertd
+          = pdf_checkbox(_f, :right_front_psi_serviced)
+      %tr
+        %td.headcell2 LEFT REAR
+        %td.subheadcell SERV
+        %td.headcell2 RIGHT REAR
+        %td.subheadcell SERV
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_rear_tread_depth_legend, 'g')
+                = pdf_legend(_f, :left_rear_tread_depth_legend, 'y')
+                = pdf_legend(_f, :left_rear_tread_depth_legend, 'r')
+              %td
+                %p
+                  The Tread Depth:
+                  = succeed "mm" do
+                    %label= @vehicle_report_card.tire_wear_indicate[:left_rear_tread_depth]
+        %td.centertd
+          = pdf_checkbox(_f, :left_rear_tread_depth_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_rear_tread_depth_legend, 'g')
+                = pdf_legend(_f, :right_rear_tread_depth_legend, 'y')
+                = pdf_legend(_f, :right_rear_tread_depth_legend, 'r')
+              %td
+                %p
+                  The Tread Depth:
+                  = succeed "mm" do
+                    %label= @vehicle_report_card.tire_wear_indicate[:right_rear_tread_depth]
+        %td.centertd
+          = pdf_checkbox(_f, :right_rear_tread_depth_serviced)
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_rear_pattern_legend, 'g')
+                = pdf_legend(_f, :left_rear_pattern_legend, 'y')
+                = pdf_legend(_f, :left_rear_pattern_legend, 'r')
+              %td
+                %p Tire Wear Pattern / Damage
+        %td.centertd
+          = pdf_checkbox(_f, :left_rear_pattern_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_rear_pattern_legend, 'g')
+                = pdf_legend(_f, :right_rear_pattern_legend, 'y')
+                = pdf_legend(_f, :right_rear_pattern_legend, 'r')
+              %td
+                %p Tire Wear Pattern / Damage
+        %td.centertd
+          = pdf_checkbox(_f, :right_rear_pattern_serviced)
+      %tr
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :left_rear_psi_legend, 'g')
+                = pdf_legend(_f, :left_rear_psi_legend, 'y')
+                = pdf_legend(_f, :left_rear_psi_legend, 'r')
+              %td
+                %p Tire Pressure set to factory-recommended PSI
+        %td.centertd
+          = pdf_checkbox(_f, :left_rear_psi_serviced)
+        %td
+          %table
+            %tr
+              %td{:width => "40%"}
+                = pdf_legend(_f, :right_rear_psi_legend, 'g')
+                = pdf_legend(_f, :right_rear_psi_legend, 'y')
+                = pdf_legend(_f, :right_rear_psi_legend, 'r')
+              %td
+                %p Tire Pressure set to factory-recommended PSI
+        %td.centertd
+          = pdf_checkbox(_f, :right_rear_psi_serviced)
+      %tr
+        %td
+        %td
+        %td{:colspan => "2", :rowspan => "2"}
+          %input#A83.css-checkboxSimple{:name => "A83", :type => "checkbox"}/
+          %label.css-labelSimple{:for => "A83"}
+            &nbsp;
+            Customer Declined (ford-Recommended Maintenance)

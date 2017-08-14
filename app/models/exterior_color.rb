@@ -1,0 +1,2 @@
+class ExteriorColor < Color
+end

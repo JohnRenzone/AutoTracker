@@ -1,0 +1,5 @@
+- breadcrumb = render_breadcrumbs tag: :li, separator: '', class: 'btn btn-default'
+- if breadcrumb.present?
+  %ol.breadcrumb
+    = breadcrumb
+  %h2.pB20= breadcrumb.scan(/<li>.*<a.*>(.*?)<\/a><\/li>/).last.first.html_safe rescue nil

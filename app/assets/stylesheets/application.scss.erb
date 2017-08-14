@@ -1,0 +1,173 @@
+//
+// Prefer imports over require
+// http://pivotallabs.com/structure-your-sass-files-with-import/
+//
+//= require nprogress
+//= require nprogress-bootstrap
+//= require util
+//= require bootstrap-datetimepicker
+//= require vehicle_report_cards
+//= require font-awesome/css/font-awesome
+//= require_self
+// Core
+@import "variables";
+@import "bootstrap";
+@import "cards";
+@import "footer";
+@import "header";
+@import "hacks";
+@import "auth";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+// Padding to clear fixed nav
+body {
+  margin-bottom: 230px;
+  padding-top: 70px;
+  background: image-url('background/lights.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body.controller__sessions, body.controller__passwords {
+  background: image-url('background/force.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+// Make sure alerts are nicely formatted
+.alert {
+  a {
+    white-space: nowrap;
+  }
+}
+
+// Postion loading spinner at bottom right
+#nprogress .spinner {
+  bottom: 15px;
+  top: auto;
+}
+
+.mT50 {
+  margin-top: 50px;
+}
+
+#error_explanation {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+// bootstrap overriding
+.checkbox label {
+  font-weight: bold;
+}
+
+
+/*Jquery vaidation*/
+
+label.error {color: darkred;}
+input.error {border: 1px solid darkred;}
+
+.blue-bar {
+  background-color: $navbar-default-bg;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0 30px 0px;
+  border-right: 3px solid #ccc;
+}
+
+.grey-bar {
+  background-color: #808080;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 10px 0px;
+  border-right: 3px solid #ccc;
+  h5 {padding: 10px;}
+}
+
+/*Progress bar for ajax*/
+
+#progress {
+  background: #eef9fb;
+  border: 1px solid #23afc4;
+  border-top: none;
+  margin: 0 !important;
+  position: fixed;
+  padding: 5px;
+  top: -30px;
+  right: 1px;
+  z-index: 999999;
+  font-size: 120%;
+  img {
+    vertical-align: middle;
+    margin: 0 2px;
+  }
+}
+
+/* Text and Service checkbox on new line for mobile */
+
+.serv-label-two {
+    display: none;
+}
+
+@media screen and (max-width : 480px) {
+    .full-box {
+        width: 100%;
+    }
+
+    .service-button > .check-box-block {
+        margin: 0 !important;
+    }
+
+    .service-button > .pB10 > .col-md-2.col-xs-2.col-sm-2 {
+        padding-left: 6px;
+    }
+
+    .action__new .row, .auth__form, .auth__providers {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    #new_vehicle_report_card .check-box-block {
+        margin-left: 5px;
+    }
+
+    .serv-label-two {
+        display: inline-block;
+        margin: 0px 15px;
+        font-size: 12px
+    }
+
+    .serv-label-one .text-muted {
+        display: none;
+    }
+
+    .xs-border {
+        border-bottom: 1px dotted #777777;
+        margin-bottom: 5px;
+    }
+    .xs-border label{
+        margin: 15px 2px 5px 4px;
+    }
+
+    .xs_padding_0
+    {
+        padding: 0px !important
+    }
+
+    .xs_padding_01500
+    {
+        padding: 0px 15px 0px 0px !important
+    }
+}
+/*breadcrumb override*/
+.breadcrumb {padding: 8px 15px 8px 0px;}

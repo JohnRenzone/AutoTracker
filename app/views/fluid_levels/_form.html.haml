@@ -1,0 +1,15 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 FLUID LEVELS
+  - [:engine_oil, :brake_reservoir, :power_steering, :window_washer, :transmission, :coolent_recovery_reservoir].each do |column|
+    .row.pB10
+      .col-md-4.col-xs-7.col-sm-5
+        .btn-group.fluid-levels.check-value{"data-toggle" => "buttons"}
+          %label.btn.btn-lg.btn-success.mR10.backgroundNone.cBlack
+            = f.radio_button column, 1
+            OK
+          %label.btn.btn-lg.btn-danger.mR10.backgroundNone.cBlack
+            = f.radio_button column, 2
+            FILL
+      .col-md-8.col-xs-5.col-sm-7
+        = f.label column

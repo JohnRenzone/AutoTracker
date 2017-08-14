@@ -1,0 +1,28 @@
+= form_for(@user) do |f|
+  .form-group
+    = render 'active_record_errors', object: @user
+  .form-group
+    = f.label :email
+    = f.email_field :email, placeholder: 'eg: jhon@example.com', class: 'form-control'
+  .form-group
+    = f.label :username
+    = f.text_field :username, placeholder: 'eg: jhonsmith', class: 'form-control'
+  .form-group
+    = f.label :first_name
+    = f.text_field :first_name, placeholder: 'eg: Jhon', class: 'form-control'
+  .form-group
+    = f.label :last_name
+    = f.text_field :last_name, placeholder: 'eg: Smith', class: 'form-control'
+  .form-group
+    = f.label :role
+    = f.select :role, current_user.roles_for_select_box, {prompt: true}, class: 'form-control'
+  = render 'dealership_field', f: f
+  .form-group
+    = f.label :password
+    = f.password_field :password, class: 'form-control'
+    - if !@user.new_record?
+      .help-block
+        Leave blank if you don't wish to change password.
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary btn-lg'
+    = link_to 'cancel', dealerships_path, class: 'btn btn-default btn-lg mL10'

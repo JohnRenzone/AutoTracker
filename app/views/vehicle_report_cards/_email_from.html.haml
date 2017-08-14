@@ -1,0 +1,10 @@
+= form_for (@vehicle_report_card), html: { class: "form-horizontal", id: "email_report_card", data: {jquery_validate: true} }, remote: true do |f|
+  .row
+    .col-md-12
+      .form-group
+        = f.email_field :customer_email, placeholder: t('activerecord.attributes.vehicle_report_card.customer_email'), class: 'form-control', required: true
+  .row
+    .col-md-12
+      .form-group
+        %button.btn.btn-success{:id => "btn-report-card",:type => "submit"} Submit
+        %a.btn.btn-default{id: 'btn-cancel'} Cancel

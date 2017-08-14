@@ -1,0 +1,29 @@
+.row.mB20
+  .col-xs-12
+    = link_to 'New Dealership', new_dealership_path, class: 'btn btn-primary btn-lg pull-right mB20'
+.table-responsive
+  %table.table.table-striped.table-hover.table-bordered
+    %thead
+      %tr
+        %th Title
+        %th Dealers
+        %th Service Advisors
+        %th Technicians
+        %th{width: '20%'} Created At
+        %th{width: '15%'}
+
+    %tbody
+      - @dealerships.each do |dealership|
+        %tr
+          %td= dealership.title || '-'
+          %td= dealership.users.dealers.count
+          %td= dealership.users.service_advisors.count
+          %td= dealership.users.technicians.count
+          %td= l(dealership.created_at, format: :short)
+          %td
+            = link_to 'Edit', edit_dealership_path(dealership), class: 'btn btn-default btn-xs'
+            = link_to 'Destroy', dealership, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs'
+
+= paginate @dealerships
+%br
+

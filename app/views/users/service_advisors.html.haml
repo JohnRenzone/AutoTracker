@@ -1,0 +1,16 @@
+- if @users.present?
+  .table-responsive
+    %table.table.table-striped.table-bordered
+      %tr
+        %th
+          E-mail
+        %th
+      - @users.each do |user|
+        %tr
+          %td
+            = user.email
+          %td.text-center{width: '10%'}
+            = link_to "Delete".html_safe, user_path(user), method: :delete, class: 'btn btn-default btn-xs', data: {confirm: 'Are you sure you want to remove this service advisor?'}
+.row.pA50
+  .col-md-12.text-center
+    = link_to 'Invite ' + t('users.roles.service_advisor'), new_user_invitation_path, class: 'btn btn-primary btn-lg'

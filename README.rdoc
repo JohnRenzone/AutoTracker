@@ -1,0 +1,206 @@
+== AutoTracker
+
+AutoTracker
+
+=== Overview
+
+Vehicle reports made easy!
+
+== Features
+
+<b>UI/UX</b>
+* Email Template Preview[https://hostname/p/email?premail=true&layout=email] — with inline CSS via Premailer
+* Devise[https://github.com/plataformatec/devise]
+
+<b>Configuration</b>
+* All app settings are in config/application.yml with automatic overriding by ENV vars
+* Development secrets are checked into git for convenience
+* Production secrets are configured via server ENV vars
+
+<b>BDD/TDD</b>
+* Spring[https://github.com/rails/spring] / Zeus[https://github.com/burke/zeus] — fast development and testing startup; Spring is enabled by default
+* Rspec[http://rspec.info/] — tests, somewhat following BetterSpecs[http://betterspecs.org/]
+* SimpleCov[https://github.com/colszowka/simplecov] — code coverage
+* Guard[https://github.com/guard/guard] — automatically run tests on code change
+
+<b>Background Jobs</b>
+* Sidekiq[https://github.com/mperham/sidekiq] — fast, memory efficient background jobs
+
+<b>Error Reporting</b>
+* Airbrake[https://github.com/airbrake/airbrake]
+
+<b>Maintainable CSS</b>
+* Bootstrap3[http://getbootstrap.com/]
+* BEM[http://bem.info/method/] class names — prevents class name collision
+* SASS @extend[http://sass-lang.com/documentation/file.SASS_REFERENCE.html#extend] — keeps Bootstrap specific class names out of the views, making it easier to switch CSS frameworks
+
+<b>Emails</b>
+* Ink[http://zurb.com/ink/] — Zurb's email templates for maximum email client compatibility
+* Premailer[http://premailer.dialect.ca/] — automatically inlines CSS styles, making it easy to customize email templates without sacrificing compatibility
+* Previewable — easily preview emails in development
+* Scalable — User and Devise are configured to send emails via background jobs
+
+<b>Databases</b>
+* PostgreSQL[http://www.postgresql.org/] — app data; switchable to MySQL, MongoDB, etc.
+* Redis[http://redis.io/] — background job queues
+* Memcached[http://memcached.org/] — session data
+
+
+= Requirements
+
+The following services need to be running on localhost in order for rails server
+to start without modifying config files.
+
+* PostgreSQL[http://www.postgresql.org/] — app data; switchable to MySQL, MongoDB, etc.
+* Redis[http://redis.io/] — background job queues
+* Memcached[http://memcached.org/] — session data
+
+
+= Installation
+
+Gemfile is configured for OSX development. See comments in Gemfile for Linux.
+
+  #make sure you have installed ruby 2.3.0 version.
+  npm install -g bower
+  brew install postgres
+  brew install redis
+  brew install memcached
+  
+  git clone https://github.com/TheBauhub/autotracker.git autotracker
+  cd autotracker
+  cp config/database.yml.example config/database.yml
+  bundle install
+  
+  bin/rake bower:install
+  
+  # Make sure postgres, memcached and redis are running locally
+  # On OSX with brew...
+  /usr/local/opt/memcached/bin/memcached
+  redis-server /usr/local/etc/redis.conf
+  postgres -D /usr/local/var/postgres
+  
+  # Setup the db
+  bin/rake db:create db:migrate db:seed
+  
+Modify vars in config/application.yml. Generate new secret tokens or your app will be hackable!
+
+= To create Admin
+
+ Run this rake task,
+
+ rake populate:admin
+
+
+= Development
+
+Spring is enabled by default. To use Zeus, comment out spring gems in Gemfile and
+uncomment zeus.
+
+  # Spring
+  rails server
+  bundle exec guard
+
+  # Zeus
+  zeus start
+  zeus server
+  bundle exec guard
+
+Open in browser: http://0.0.0.0:3000
+
+Running `rails server` will start WEBrick. To run unicorn in development, use `unicorn -c config/unicorn.rb` or foreman[https://github.com/ddollar/foreman].
+
+Twitter and Facebook demo app credentials use callback urls for http://0.0.0.0:3000
+
+= Debugging
+
+  # Add pry or byebug to code
+  binding.pry
+  byebug
+
+To debug a background worker, start the rails server and sidekiq in separate processes.
+
+  rails server
+  bundle exec sidekiq -C config/sidekiq.yml
+  Right now disabled. But works just fine!!
+
+  # Add byebug to worker code to debug
+
+Use Sidekiq's web UI to restart jobs if needed: http://0.0.0.0:3000/admin/sidekiq/jobs/retries
+
+
+= Testing
+
+For BDD/TDD, just keep guard running in the background. The relevant tests will automatically run when code is added or modified.
+
+To run the full test suite without guard...
+
+  # Spring
+  rspec spec
+
+  # Without Spring
+  DISABLE_SPRING=true rspec spec
+
+  # Zeus
+  zeus test spec
+
+
+Note that Sidekiq does not process jobs in tests.
+
+
+
+= Production
+
+<b>Setup Heroku</b>
+
+  heroku create [app name]
+
+  # Copy and paste
+  heroku addons:add heroku-postgresql
+  heroku addons:add memcachier
+  heroku addons:add newrelic
+  heroku addons:add pgbackups
+  heroku addons:add redistogo
+  heroku addons:add sendgrid
+  heroku config:add DEVISE_SECRET_KEY="$(bundle exec rake secret)"
+  heroku config:add DEVISE_PEPPER="$(bundle exec rake secret)"
+  heroku config:add SECRET_KEY_BASE="$(bundle exec rake secret)"
+  heroku config:set REDIS_URL=`heroku config:get REDISTOGO_URL`
+
+  # Needs customization
+  heroku config:add MAIL_HOST=[YOUR APP URL]
+
+  git push heroku master
+
+  heroku run rake db:migrate
+  heroku open
+
+  # Be sure to configure social login keys to get Facebook/Twitter/etc. login to work.
+
+
+<b>Install Airbrake</b>
+
+After setting up Airbrake, update your server ENV vars.
+
+  # In hostname dir
+  heroku config:add AIRBRAKE_API_KEY=[YOUR KEY]
+  heroku config:add AIRBRAKE_HOST=[YOUR-ERRBIT-APP.herokuapp.com]
+
+  # Send test
+  rake airbrake:test
+
+= Mail Previews
+
+Has two ways to preview emails:
+
+* http://localhost:3000/rails/mailers – Rails 4.1 built-in method
+* http://0.0.0.0:3000/p/email?premail=true&layout=email
+
+Mail previews are only available in development by default. To make previews available in other environments, set the ALLOW_EMAIL_PREVIEW='1'.
+
+=Instances
+* http://autotracker-test.herokuapp.com is used by developers and pushes will be frequent to this instance
+* http://autotracker-qa.herokuapp.com http://autotracker-qa.herokuapp.com used to test any completed feature
+* http://autotracker-staging.herokuapp.com is the one which will be holding release/hotfix branches
+
+=Rake tasks
+* rake populate:admin

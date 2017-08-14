@@ -1,0 +1,16 @@
+- if users.present?
+  %table.table.table-hover.table-bordered
+    %tr
+      %th{colspan: 2}
+        Name/E-mail/Username
+    - users.each do |user|
+      %tr
+        %td
+          = user.name_or_email_or_username
+        %td{width: '20%'}
+          = link_to login_user_path(user), class: 'btn btn-default btn-xs', method: :post, data: {confirm: "You are about to login as #{user.name_or_email_or_username}. Are you sure?"} do
+            Login
+            %i.fa.fa-sign-in
+- else
+  %p.text-muted.text-center.small
+    There are no users registered yet.

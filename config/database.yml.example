@@ -1,0 +1,28 @@
+development: &common
+  adapter: postgresql
+  encoding: unicode
+  database: <%= Rails.application.config.settings.app_name %>_development
+  pool: 5
+  username:
+  password:
+  host: localhost
+  
+test:
+  <<: *common
+  database: <%= Rails.application.config.settings.app_name %>_test
+
+testing:
+  <<: *common
+  database: <%= Rails.application.config.settings.app_name %>_testing
+
+qa:
+  <<: *common
+  database: <%= Rails.application.config.settings.app_name %>_qa
+
+staging:
+  <<: *common
+  database: <%= Rails.application.config.settings.app_name %>_staging
+
+production:
+  <<: *common
+  database: <%= Rails.application.config.settings.app_name %>_production

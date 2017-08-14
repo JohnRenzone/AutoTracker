@@ -1,0 +1,24 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 SYSTEM / COMPONENTS
+.row
+  - VehicleComponent::ITEMS.each_pair do |key, items|
+    .col-md-6.col-xs-12.col-sm-12
+      .row
+        .col-md-12.grey-bar
+          %h5= key
+        - items.each do |item|
+          .row.pB10
+            .col-md-offset-10.col-sm-offset-10.col-xs-offset-10.col-md-2.col-xs-2.col-sm-2.serv-label-one
+              %strong.text-muted= t('serviced')
+          .row.pB10.xs-border
+            .col-md-5.col-xs-7.col-sm-5.full-box
+              .form-group
+                = legend item[0], f, item[2]
+            .col-md-5.col-xs-9.col-sm-5
+              = f.label item[0]
+            .serv-label-two
+              %strong.text-muted= t('serviced')
+            .col-md-2.col-xs-3.col-sm-2.text-center
+              .form-group
+                = check_box_block f, item[1]

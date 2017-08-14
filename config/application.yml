@@ -1,0 +1,148 @@
+# Application settings available as Rails.application.config.settings
+#
+# All values in this file are namespaced under Rails.application.config.settings
+# and will not conflict with other configuration values in Rails.application.config.
+# Settings are manually applied to the correct config var as needed in specific initializers.
+# e.g. config/initializers/devise.rb
+
+common: &common
+  # Downcased and trimmed app name for namespaces.
+  # Safest to start with a letter rather than a number.
+  # See locales/en.yml for setting your app's user facing brand name.
+  app_name: 'autotracker'
+
+  social:
+    facebook: 'https://www.facebook.com/autotracker'
+    twitter: 'https://twitter.com/autotracker'
+    google_plus: 'https://plus.google.com/+autotracker'
+    linkedin: 'http://www.linkedin.com/in/autotracker'
+
+  contact:
+    email: 'support@autotracker.com'
+    phone: '908-844-3990'
+    website: 'www.oak-land.com'
+
+  session:
+    key: '_autotracker_session'
+    expire_after: <%= 30.days %>
+
+  rack:
+    timeout: 20
+
+  mail:
+    layout: 'emails/email'
+    from: 'support@autotracker.com'
+
+  vin_query:
+    end_point: 'https://www.vinquery.com/samples/ws_ext.xml'
+    access_code: 'randomkey'
+
+# Default ENV vars.
+# Set to development values for convenience and override in production by setting ENV on the server.
+# As a best practice, do not put production values in this file for security reasons.
+default_env: &default_env
+  # From address to use when sending email
+  MAIL_HOST: 'localhost:3000'
+
+  # Host used to determine direct requests vs CDN.
+  # See RobotsController.
+  CANONICAL_HOST: 'localhost:3000'
+
+#  AUTH_FACEBOOK_KEY: '1060174110720349'
+#  AUTH_FACEBOOK_SECRET: '504fa0b72e5f156be08514d22dc2ffae'
+#
+#  AUTH_TWITTER_KEY: 'NJT5XbUlvCw1fgcdnVwLme59j'
+#  AUTH_TWITTER_SECRET: 'iCzLbYJKRfPujwU1CHX3j1JzDiyNL8p113xxWhY62Up5UDzXip'
+
+  # Authentication key for QA environment
+  AUTH_FACEBOOK_KEY: '1703891223221544'
+  AUTH_FACEBOOK_SECRET: '6fa6b357375fd7d108985de9db487e3b'
+
+  AUTH_TWITTER_KEY: 'BjLIA1bC69UtJZ9AnnXt855xH'
+  AUTH_TWITTER_SECRET: '99ZPsrjQykdoxA6fVtheaYSZs4WpIZ7jd9eg4dzv5H6t4pk1mX'
+
+  # Devise password encryption keys.
+  # Channging the keys will invalidate user passwords,
+  # forcing users to use the forgot password feature.
+  DEVISE_SECRET_KEY: 'c357306be02369de62bd93aea1a515faeaa2729c259828f0e996a0b1842dc7d931de85b4c3d05872bb633f699cb924641aa264f649b016e47b63b331ede5b0bb'
+  DEVISE_PEPPER: '349da1a060395b2caa80a69dbf83cfdd99bd6b3fd8f31620ebcd35304738d0bdcbf14849ab1d0597397e9b60bf019e10025a9de2f5cf8f1694554a67ddc1ed55'
+
+  # Signed cookie encryption key.
+  SECRET_KEY_BASE: '3c24bcfef13982cb3e38a0bf99b82c5b4e04bd67eb071840ff8662104b32c8bf7c170756e311ae864645a51fbf1c201dfd5fc6cea6e70edd7b31bd5236461fd9'
+  REDIS_URL: 'redis://localhost:6379/0'
+
+  AIRBRAKE_API_KEY: ''
+  AIRBRAKE_HOST: ''
+
+  DATA_ONE_AUTH_CODE: 'b3156976a0d19bdb3eadaaee53d79970120d3821'
+  DATA_ONE_CLIENT_ID: '12930'
+
+development:
+  <<: *common
+  action_mailer:
+    asset_host: 'http://localhost:3000'
+  env:
+    <<: *default_env
+    ALLOW_EMAIL_PREVIEW: true
+
+    AUTH_FACEBOOK_KEY: '513127405555721'
+    AUTH_FACEBOOK_SECRET: 'bf7527e12d191dd160b7c7b2f1e6155a'
+
+    AUTH_TWITTER_KEY: 'PAHN9Xt1ek6BP8agId6CIkHUE'
+    AUTH_TWITTER_SECRET: 'n4yICYxsOQxR2Y831aOGxUUCZmYwNkcxvY8egnqMXwsik0Z4MI'
+
+test:
+  <<: *common
+  action_mailer:
+    asset_host: test.local
+  env:
+    <<: *default_env
+
+testing:
+  <<: *common
+  action_mailer:
+    asset_host: 'https://autotracker-test.herokuapp.com'
+  env:
+    <<: *default_env
+    MAIL_HOST: 'autotracker-test.herokuapp.com'
+
+    AUTH_FACEBOOK_KEY: '513127495555712'
+    AUTH_FACEBOOK_SECRET: '366fe6ace326329fa7da07ed87b7b72f'
+
+    AUTH_TWITTER_KEY: 'Lrsl29SMGD3SL72boxjzfFDQT'
+    AUTH_TWITTER_SECRET: '8WUgzCPV3Rdu6wiemnxYChBIx92OHypOUe8SHUBABOGDDRxdwq'
+qa:
+  <<: *common
+  action_mailer:
+    asset_host: 'https://autotracker-qa.herokuapp.com'
+  env:
+    <<: *default_env
+    MAIL_HOST: 'autotracker-qa.herokuapp.com'
+
+    AUTH_FACEBOOK_KEY: '239227003081241'
+    AUTH_FACEBOOK_SECRET: '9e171a5f2096fe47c6997e0b37ad7155'
+
+    AUTH_TWITTER_KEY: 'Fky51dewA8B5fsV1Rr9qJpn0W'
+    AUTH_TWITTER_SECRET: 'Qarq620PQqfvcXlmb9CZ4TZ5CDwl4DXG5J4GFIMQJYQv9o8Q4V'
+
+staging:
+  <<: *common
+  action_mailer:
+    asset_host: 'https://autotracker-staging.herokuapp.com'
+  env:
+    <<: *default_env
+    MAIL_HOST: 'autotracker-staging.herokuapp.com'
+
+    AUTH_FACEBOOK_KEY: '513127685555693'
+    AUTH_FACEBOOK_SECRET: '2dc2cc90b768a784b75d75c285c943de'
+
+    AUTH_TWITTER_KEY: 'Fky51dewA8B5fsV1Rr9qJpn0W'
+    AUTH_TWITTER_SECRET: 'Qarq620PQqfvcXlmb9CZ4TZ5CDwl4DXG5J4GFIMQJYQv9o8Q4V'
+
+production:
+  <<: *common
+  action_mailer:
+    asset_host: 'https://app.yourautotracker.com'
+  env:
+    <<: *default_env
+    MAIL_HOST: 'app.yourautotracker.com'

@@ -1,0 +1,8 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    = wicked_pdf_stylesheet_link_tag 'pdf_layout'
+  %body{:bgcolor => "#FFFFFF", :leftmargin => "0", :marginheight => "0", :marginwidth => "0", :topmargin => "0"}/
+  = yield
+

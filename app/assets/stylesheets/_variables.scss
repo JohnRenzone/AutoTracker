@@ -1,0 +1,36 @@
+//
+// Put application and Bootstrap variables in this file.
+//
+
+// Refer to _variables.scss in bootstrap-sass gem
+//$ bundle open bootstrap-sass
+
+// Example:
+// $font-size-base: 20px;
+
+// Tighten up grid padding.
+$grid-gutter-width: 20px;
+
+// Don't collapse until screen is 480px or smaller.
+// This effects when the topnav collapses.
+$grid-float-breakpoint: 480px;
+
+
+//Start of overriding bootstrap variables
+$navbar-default-bg:                #003f62 !default;
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #fff !default;
+
+$navbar-default-toggle-hover-bg:           $navbar-default-bg !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       $navbar-default-bg !default;
+$brand-primary: #003F62 !default;
+//End of overriding bootstrap variables
+
+// Import bootstrap variables to make all variables available from this file.
+// Useful for situations where only this file is imported.
+@import "bootstrap/variables";
+
+
+$avatar-background-color: $gray-light;
+$avatar-default-color: darken($avatar-background-color, 20%);

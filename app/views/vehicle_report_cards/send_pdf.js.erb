@@ -1,0 +1,22 @@
+<% if @vehicle_report_card.customer_email.present? %>
+    $(".modal-body").empty().append("<p>Are you sure you want to mail PDF to <b><%= @vehicle_report_card.customer_email %></b> ? </p>");
+    $(".modal-body").append("<p>If you want to change Email ID, Please click here, <a id='edit_email' remote='true'>Edit</a></p>");
+    $(".modal-body").append("<div id='email-div'></div>");
+    $(".modal-footer").empty().append("<a href='/reports/<%= @vehicle_report_card.id %>/email_pdf' class='btn btn-primary'>Email</a>");
+    $(".modal-footer").append("<button class='btn btn-default' data-dismiss='modal' type='button'>Close</button>");
+<% else %>
+    <%- if can? :update, @vehicle_report_card%>
+      $(".modal-body").empty().append("<p>Customer Email ID is not yet added. Please click here, <a id='edit_email'>Edit</a></p>");
+    <% else %>
+      $(".modal-body").empty().append("<p>Customer Email ID is not yet added by technician.</p>");
+    <% end %>
+    $(".modal-body").append("<div id='email-div'></div>");
+    $(".modal-footer").empty().append("<button class='btn btn-default' data-dismiss='modal' type='button'>Close</button>");
+<% end %>
+
+$("#reportModal").modal("show");
+
+$('#edit_email').on("click",function(){
+    $("#email-div").empty().append("<%= j("#{render :partial => 'email_from'}").html_safe %>");
+    $("#email-div").show();
+});

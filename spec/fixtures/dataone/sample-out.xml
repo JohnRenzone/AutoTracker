@@ -1,0 +1,1986 @@
+
+<decoded_data>
+	<decoder_messages>
+		<service_provider>DataOne Software, Inc.</service_provider>
+		<decoder_version>7.0.1</decoder_version>
+		<decoder_errors></decoder_errors>
+	</decoder_messages>
+	<query_responses>
+		<query_response identifier="Request-Sample"
+			transaction_id="048E8D5448C02F1AC144061DA4E43B002D99E6C9">
+			<query_error>
+				<error_code></error_code>
+				<error_message></error_message>
+			</query_error>
+			<us_market_data>
+				<common_us_data>
+					<basic_data>
+						<market>US Light-Duty</market>
+						<year>2011</year>
+						<make>Audi</make>
+						<model>A6</model>
+						<trim>4.2 quattro Prestige</trim>
+						<vehicle_type>Car</vehicle_type>
+						<body_type>Sedan</body_type>
+						<body_subtype></body_subtype>
+						<oem_body_style>Sedan</oem_body_style>
+						<doors>4</doors>
+						<oem_doors>4</oem_doors>
+						<model_number>4F25DL</model_number>
+						<package_code></package_code>
+						<drive_type>AWD</drive_type>
+						<brake_system>Hydraulic</brake_system>
+						<restraint_type>Driver and front passenger front airbags with
+							occupant sensing deactivation, front side airbags and front and
+							rear side curtain airbags. </restraint_type>
+						<country_of_manufacture>Germany</country_of_manufacture>
+						<plant>Neckarsulm, Germany</plant>
+					</basic_data>
+					<pricing>
+						<msrp>59150</msrp>
+						<invoice_price>55010</invoice_price>
+						<destination_charge>875</destination_charge>
+						<gas_guzzler_tax>0</gas_guzzler_tax>
+					</pricing>
+					<engines>
+						<engine name="4.2L V8 350hp 325ft. lbs." brand=""
+							marketing_name="" engine_id="200351">
+							<availability>Installed</availability>
+							<aspiration>N/A</aspiration>
+							<block_type>V</block_type>
+							<bore>3.33</bore>
+							<cam_type>DOHC</cam_type>
+							<compression>12.5</compression>
+							<cylinders>8</cylinders>
+							<displacement>4.2</displacement>
+							<fuel_induction>DI</fuel_induction>
+							<fuel_quality>93</fuel_quality>
+							<fuel_type>G</fuel_type>
+							<msrp>0</msrp>
+							<invoice_price>0</invoice_price>
+							<marketing_name></marketing_name>
+							<max_hp>350</max_hp>
+							<max_hp_at>6800</max_hp_at>
+							<max_payload></max_payload>
+							<max_torque>325</max_torque>
+							<max_torque_at>3500</max_torque_at>
+							<oil_capacity>8.4</oil_capacity>
+							<order_code></order_code>
+							<redline></redline>
+							<stroke>3.65</stroke>
+							<valve_timing>VVT</valve_timing>
+							<valves>32</valves>
+						</engine>
+					</engines>
+					<transmissions>
+						<transmission name="6-Speed Shiftable Automatic"
+							brand="" marketing_name="Tiptronic" transmission_id="230943">
+							<availability>Installed</availability>
+							<type>A</type>
+							<detail_type>Shiftable Automatic</detail_type>
+							<gears>6</gears>
+							<order_code></order_code>
+							<msrp>0</msrp>
+							<invoice_price>0</invoice_price>
+						</transmission>
+					</transmissions>
+					<specifications>
+						<category name="Drive Type">
+							<specification name="Drive Type">AWD</specification>
+						</category>
+						<category name="Fuel Tanks">
+							<specification name="Fuel Tank 1 Capacity (Gallons)">21.1</specification>
+						</category>
+						<category name="Interior Dimensions">
+							<specification name="Cargo Volume">15.9</specification>
+							<specification name="Interior Volume">97.4</specification>
+						</category>
+						<category name="Measurements of Size and Shape">
+							<specification name="Front Track Width">63.5</specification>
+							<specification name="Ground Clearance">4.6</specification>
+							<specification name="Height">57.4</specification>
+							<specification name="Length">193.5</specification>
+							<specification name="Rear Track Width">64</specification>
+							<specification name="Wheelbase">111.9</specification>
+							<specification name="Width">79.9</specification>
+							<specification name="Width without Mirrors">73</specification>
+						</category>
+						<category name="Measurements of Weight">
+							<specification name="Curb Weight">4211</specification>
+						</category>
+						<category name="Performance Specifications">
+							<specification name="Acceleration (0-60MPH)">5.8</specification>
+							<specification name="Aerodynamic Drag">0.29</specification>
+							<specification name="Turning Circle">39</specification>
+						</category>
+						<category name="Seating">
+							<specification name="Head Room 1st Row">38.7</specification>
+							<specification name="Head Room 2nd Row/Rear">37.8</specification>
+							<specification name="Leg Room 1st Row">41.3</specification>
+							<specification name="Leg Room 2nd Row/Rear">36.9</specification>
+							<specification name="Max Seating">5</specification>
+							<specification name="Seating Rows">2</specification>
+							<specification name="Shoulder Room 1st Row">57.1</specification>
+							<specification name="Shoulder Room 2nd Row/Rear">55.9</specification>
+							<specification name="Standard Seating">5</specification>
+						</category>
+						<category name="Wheels and Tires">
+							<specification name="Front Tire Type">P245/40R18</specification>
+							<specification name="Front Wheel Diameter">18</specification>
+						</category>
+					</specifications>
+					<installed_equipment>
+						<category name="Air Conditioning">
+							<equipment name="Air filtration">
+								<value installed_equipment_id="281731">active charcoal
+								</value>
+							</equipment>
+							<equipment name="Front air conditioning">
+								<value installed_equipment_id="157034">automatic climate
+									control</value>
+							</equipment>
+							<equipment name="Front air conditioning zones">
+								<value installed_equipment_id="237877">dual</value>
+							</equipment>
+							<equipment name="Rear air conditioning">
+								<value installed_equipment_id="5000001482">with
+									independent controls</value>
+							</equipment>
+							<equipment name="Rear air conditioning zones">
+								<value installed_equipment_id="238681">single</value>
+							</equipment>
+						</category>
+						<category name="Airbags">
+							<equipment name="Front airbags">
+								<value installed_equipment_id="5000000033">dual</value>
+							</equipment>
+							<equipment name="Passenger airbag deactivation">
+								<value installed_equipment_id="100450">occupant sensing
+									deactivation</value>
+							</equipment>
+							<equipment name="Side airbags">
+								<value installed_equipment_id="156025">front</value>
+							</equipment>
+							<equipment name="Side curtain airbags">
+								<value installed_equipment_id="5000000032">front and rear
+								</value>
+							</equipment>
+						</category>
+						<category name="Audio System">
+							<equipment name="Antenna Type">
+								<value installed_equipment_id="205919">diversity</value>
+							</equipment>
+							<equipment name="Auxiliary audio input">
+								<value installed_equipment_id="5000001939">iPod/iPhone
+									integration</value>
+								<value installed_equipment_id="5000001324">jack</value>
+								<value installed_equipment_id="5000001327">memory card
+									slot</value>
+							</equipment>
+							<equipment name="CD changer">
+								<value installed_equipment_id="401446">6</value>
+							</equipment>
+							<equipment name="Digital Sound Processing">
+								<value installed_equipment_id="5000000392"></value>
+							</equipment>
+							<equipment name="Hard Drive">
+								<value installed_equipment_id="5000001583">40GB</value>
+							</equipment>
+							<equipment name="In-Dash CD">
+								<value installed_equipment_id="300136">single CD/DVD
+								</value>
+							</equipment>
+							<equipment name="MP3 player">
+								<value installed_equipment_id="284886">CD MP3 Playback
+								</value>
+							</equipment>
+							<equipment name="Premium Brand">
+								<value installed_equipment_id="101935">Bose</value>
+							</equipment>
+							<equipment name="Radio">
+								<value installed_equipment_id="403418">AM/FM</value>
+								<value installed_equipment_id="5000001344">HD radio
+								</value>
+							</equipment>
+							<equipment name="Radio Data System">
+								<value installed_equipment_id="5000000184"></value>
+							</equipment>
+							<equipment name="Remote CD changer location">
+								<value installed_equipment_id="239532">in glove
+									compartment</value>
+							</equipment>
+							<equipment name="Satellite Radio">
+								<value installed_equipment_id="101157">Sirius</value>
+							</equipment>
+							<equipment name="Speed Sensitive Volume Control">
+								<value installed_equipment_id="403893">adjustable</value>
+							</equipment>
+							<equipment name="Subwoofer">
+								<value installed_equipment_id="285188">1</value>
+							</equipment>
+							<equipment name="Surround audio">
+								<value installed_equipment_id="157220">5.1</value>
+							</equipment>
+							<equipment name="Total Number of Speakers">
+								<value installed_equipment_id="402745">12</value>
+							</equipment>
+						</category>
+						<category name="Brakes">
+							<equipment name="ABS">
+								<value installed_equipment_id="5000000168">4-wheel</value>
+							</equipment>
+							<equipment name="Brake drying">
+								<value installed_equipment_id="121189"></value>
+							</equipment>
+							<equipment name="Braking assist">
+								<value installed_equipment_id="5000000315">hill start
+									assist</value>
+							</equipment>
+							<equipment name="Electronic brakeforce distribution">
+								<value installed_equipment_id="5000000122"></value>
+							</equipment>
+							<equipment name="Electronic parking brake">
+								<value installed_equipment_id="5000000854"></value>
+							</equipment>
+							<equipment name="Emergency braking assist">
+								<value installed_equipment_id="5000000462"></value>
+							</equipment>
+							<equipment name="Front brake diameter">
+								<value installed_equipment_id="328284">13.7</value>
+							</equipment>
+							<equipment name="Front brakes">
+								<value installed_equipment_id="401854">ventilated disc
+								</value>
+							</equipment>
+							<equipment name="Rear brake diameter">
+								<value installed_equipment_id="155124">13.0</value>
+							</equipment>
+							<equipment name="Rear brakes">
+								<value installed_equipment_id="5000002029">solid disc
+								</value>
+							</equipment>
+						</category>
+						<category name="Child Safety">
+							<equipment name="Child safety locks">
+								<value installed_equipment_id="5000000116"></value>
+							</equipment>
+							<equipment name="Child seat anchors">
+								<value installed_equipment_id="5000000117">LATCH system
+								</value>
+							</equipment>
+							<equipment name="Emergency interior trunk release">
+								<value installed_equipment_id="5000000369"></value>
+							</equipment>
+						</category>
+						<category name="Comfort Features">
+							<equipment name="Armrests">
+								<value installed_equipment_id="5000000516">front center
+								</value>
+							</equipment>
+							<equipment name="Cargo area light">
+								<value installed_equipment_id="5000000052"></value>
+							</equipment>
+							<equipment name="Center console trim">
+								<value installed_equipment_id="330161">wood</value>
+							</equipment>
+							<equipment name="Dash trim">
+								<value installed_equipment_id="158565">alloy, leather and
+									wood</value>
+							</equipment>
+							<equipment name="Door sill trim">
+								<value installed_equipment_id="5000001195">aluminum
+								</value>
+							</equipment>
+							<equipment name="Door trim">
+								<value installed_equipment_id="404281">alloy, leather and
+									wood</value>
+							</equipment>
+							<equipment name="Floor Mat Material">
+								<value installed_equipment_id="102938">carpet</value>
+							</equipment>
+							<equipment name="Floor Mats">
+								<value installed_equipment_id="5000000502">front and rear
+								</value>
+							</equipment>
+							<equipment name="Reading lights">
+								<value installed_equipment_id="401503">front and rear
+								</value>
+							</equipment>
+							<equipment name="Shift knob trim">
+								<value installed_equipment_id="254816">alloy, leather and
+									wood</value>
+							</equipment>
+							<equipment name="Steering wheel trim">
+								<value installed_equipment_id="403289">leather</value>
+							</equipment>
+						</category>
+						<category name="Convenience Features">
+							<equipment name="Assist handle">
+								<value installed_equipment_id="5000000870">front and rear
+								</value>
+							</equipment>
+							<equipment name="Center console">
+								<value installed_equipment_id="237714">front console with
+									storage</value>
+							</equipment>
+							<equipment name="Cruise control">
+								<value installed_equipment_id="5000000053"></value>
+							</equipment>
+							<equipment name="Cupholders">
+								<value installed_equipment_id="101712">front and rear
+								</value>
+							</equipment>
+							<equipment name="First aid kit">
+								<value installed_equipment_id="5000000681"></value>
+							</equipment>
+							<equipment name="Multi-function remote">
+								<value installed_equipment_id="5000000836">controls fuel
+									filler</value>
+								<value installed_equipment_id="365716">hands-free
+									multi-function remote with keyless ignition</value>
+								<value installed_equipment_id="5000000143">keyless entry
+								</value>
+							</equipment>
+							<equipment name="Overhead console">
+								<value installed_equipment_id="284008">with storage
+								</value>
+							</equipment>
+							<equipment name="Power outlet(s)">
+								<value installed_equipment_id="5000000886">front and rear
+								</value>
+							</equipment>
+							<equipment name="Power steering">
+								<value installed_equipment_id="402083">speed-proportional
+								</value>
+							</equipment>
+							<equipment name="Rear view camera">
+								<value installed_equipment_id="5000000496"></value>
+							</equipment>
+							<equipment name="Rear view monitor">
+								<value installed_equipment_id="3210500031"></value>
+							</equipment>
+							<equipment name="Remote trunk release">
+								<value installed_equipment_id="5000000125"></value>
+							</equipment>
+							<equipment name="Retained accessory power">
+								<value installed_equipment_id="5000000055"></value>
+							</equipment>
+							<equipment name="Steering wheel">
+								<value installed_equipment_id="5000001281">power tilt and
+									telescopic</value>
+							</equipment>
+							<equipment name="Steering wheel mounted controls">
+								<value installed_equipment_id="5000001404">audio and
+									cruise controls</value>
+								<value installed_equipment_id="5000001402">navigation
+								</value>
+								<value installed_equipment_id="5000001419">paddle shifter
+								</value>
+								<value installed_equipment_id="5000001400">phone</value>
+								<value installed_equipment_id="5000001622">voice
+									recognition controls</value>
+							</equipment>
+							<equipment name="Storage">
+								<value installed_equipment_id="5000001559">cargo net
+								</value>
+								<value installed_equipment_id="5000001512">cargo tie-down
+									anchors and hooks</value>
+								<value installed_equipment_id="5000001445">door pockets -
+									front and rear</value>
+								<value installed_equipment_id="5000001436">front seatback
+								</value>
+								<value installed_equipment_id="5000001440">grocery bag
+									holder</value>
+							</equipment>
+							<equipment name="Sun visors">
+								<value installed_equipment_id="5000001193"></value>
+							</equipment>
+							<equipment name="Tool kit">
+								<value installed_equipment_id="5000001516">
+								</value>
+							</equipment>
+							<equipment name="Universal garage door opener">
+								<value installed_equipment_id="5000001414">Homelink
+								</value>
+							</equipment>
+						</category>
+						<category name="Driver Seat">
+							<equipment name="Adjustable lumbar support">
+								<value installed_equipment_id="5000000727">power</value>
+							</equipment>
+							<equipment name="Heated">
+								<value installed_equipment_id="207825">multi-level heating
+								</value>
+							</equipment>
+							<equipment name="Height adjustable">
+								<value installed_equipment_id="5000000362"></value>
+							</equipment>
+							<equipment name="Power adjustments">
+								<value installed_equipment_id="5000000342"></value>
+							</equipment>
+						</category>
+						<category name="Drivetrain">
+							<equipment name="4WD Type">
+								<value installed_equipment_id="100972">full time</value>
+							</equipment>
+							<equipment name="Axle ratio">
+								<value installed_equipment_id="367356">3.31</value>
+							</equipment>
+							<equipment name="Center differential">
+								<value installed_equipment_id="156777">mechanical</value>
+							</equipment>
+							<equipment name="Locking differential">
+								<value installed_equipment_id="602532">front and rear
+								</value>
+							</equipment>
+						</category>
+						<category name="Engine">
+							<equipment name="Alternator">
+								<value installed_equipment_id="5000001644">190 amps
+								</value>
+							</equipment>
+							<equipment name="Battery saver">
+								<value installed_equipment_id="5000000525"></value>
+							</equipment>
+							<equipment name="Push-button Start">
+								<value installed_equipment_id="5000000619"></value>
+							</equipment>
+						</category>
+						<category name="Exterior Features">
+							<equipment name="Bumper color">
+								<value installed_equipment_id="5000000443">body-color
+								</value>
+							</equipment>
+							<equipment name="Door handle color">
+								<value installed_equipment_id="5000000340">body-color
+								</value>
+							</equipment>
+							<equipment name="Exhaust">
+								<value installed_equipment_id="5000001522">dual exhaust
+									tips</value>
+							</equipment>
+							<equipment name="Exhaust tip color">
+								<value installed_equipment_id="5000001661">polished
+									aluminum</value>
+							</equipment>
+							<equipment name="Front Air Dam">
+								<value installed_equipment_id="5000000998"></value>
+							</equipment>
+							<equipment name="Grille color">
+								<value installed_equipment_id="5000000602">chrome</value>
+							</equipment>
+							<equipment name="Mirror color">
+								<value installed_equipment_id="5000000297">body-color
+								</value>
+							</equipment>
+							<equipment name="Rear spoiler">
+								<value installed_equipment_id="5000000067"></value>
+							</equipment>
+							<equipment name="Rear spoiler color">
+								<value installed_equipment_id="5000000593">body-color
+								</value>
+							</equipment>
+							<equipment name="Window trim">
+								<value installed_equipment_id="5000001817">silver</value>
+							</equipment>
+						</category>
+						<category name="Headrests">
+							<equipment name="Adjustable rear headrests">
+								<value installed_equipment_id="283447">height adjustable
+								</value>
+							</equipment>
+							<equipment name="Front headrests">
+								<value installed_equipment_id="206395">height adjustable
+								</value>
+							</equipment>
+							<equipment name="Number of front headrests">
+								<value installed_equipment_id="366390">2</value>
+							</equipment>
+							<equipment name="Number of rear headrests">
+								<value installed_equipment_id="282822">3</value>
+							</equipment>
+						</category>
+						<category name="Instrumentation">
+							<equipment name="Compass">
+								<value installed_equipment_id="5000000159"></value>
+							</equipment>
+							<equipment name="External temperature display">
+								<value installed_equipment_id="5000000458"></value>
+							</equipment>
+							<equipment name="Fuel economy display">
+								<value installed_equipment_id="5000001346">MPG and range
+								</value>
+							</equipment>
+							<equipment name="Multi-function display">
+								<value installed_equipment_id="5000000553"></value>
+							</equipment>
+							<equipment name="Tachometer">
+								<value installed_equipment_id="5000000044"></value>
+							</equipment>
+							<equipment name="Trip computer">
+								<value installed_equipment_id="100001"></value>
+							</equipment>
+							<equipment name="Trip odometer">
+								<value installed_equipment_id="5000001711"></value>
+							</equipment>
+							<equipment name="Warnings and reminders">
+								<value installed_equipment_id="5000000497">lamp failure,
+									low fuel, engine oil, coolant</value>
+								<value installed_equipment_id="5000001527">maintenance
+									reminder</value>
+							</equipment>
+						</category>
+						<category name="Interior">
+							<equipment name="Woodgrain accents">
+								<value installed_equipment_id="5000000520"></value>
+							</equipment>
+						</category>
+						<category name="Lights">
+							<equipment name="Ambient lighting">
+								<value installed_equipment_id="5000001450">
+								</value>
+							</equipment>
+							<equipment name="Courtesy console lights">
+								<value installed_equipment_id="5000000567"></value>
+							</equipment>
+							<equipment name="Daytime running lights">
+								<value installed_equipment_id="103082"></value>
+							</equipment>
+							<equipment name="Exterior entry lights">
+								<value installed_equipment_id="5000001535">security
+									approach lamps</value>
+							</equipment>
+							<equipment name="Footwell lights">
+								<value installed_equipment_id="5000000227"></value>
+							</equipment>
+							<equipment name="Front fog lights">
+								<value installed_equipment_id="5000000068"></value>
+							</equipment>
+							<equipment name="Headlight cleaners">
+								<value installed_equipment_id="5000000850">heated</value>
+								<value installed_equipment_id="238197">high pressure
+									washers</value>
+							</equipment>
+							<equipment name="Headlights">
+								<value installed_equipment_id="5000001530">Xenon</value>
+								<value installed_equipment_id="3710500001">adaptive
+								</value>
+								<value installed_equipment_id="5000001626">auto delay off
+								</value>
+								<value installed_equipment_id="200001450">cornering
+								</value>
+								<value installed_equipment_id="5000001532">dusk sensing
+								</value>
+								<value installed_equipment_id="5000001749">self-leveling
+								</value>
+								<value installed_equipment_id="5000001607">wiper activated
+								</value>
+							</equipment>
+							<equipment name="Puddle lamps">
+								<value installed_equipment_id="5000000529"></value>
+							</equipment>
+							<equipment name="Rear fog lights">
+								<value installed_equipment_id="240529"></value>
+							</equipment>
+							<equipment name="Tail and brake lights">
+								<value installed_equipment_id="5000000446">LED</value>
+							</equipment>
+						</category>
+						<category name="Locks">
+							<equipment name="2-stage unlocking">
+								<value installed_equipment_id="367063">remote</value>
+							</equipment>
+							<equipment name="Power door locks">
+								<value installed_equipment_id="5000000629">remote</value>
+							</equipment>
+						</category>
+						<category name="Memorized Settings">
+							<equipment name="Includes driver seat">
+								<value installed_equipment_id="5000000286"></value>
+							</equipment>
+							<equipment name="Includes exterior mirrors">
+								<value installed_equipment_id="5000000299"></value>
+							</equipment>
+							<equipment name="Number of drivers">
+								<value installed_equipment_id="104245">2</value>
+							</equipment>
+						</category>
+						<category name="Mirrors">
+							<equipment name="Exterior mirrors">
+								<value installed_equipment_id="5000000843">auto-dimming
+								</value>
+								<value installed_equipment_id="5000000732">heated</value>
+								<value installed_equipment_id="5000000341">integrated turn
+									signals</value>
+								<value installed_equipment_id="5000000642">power</value>
+								<value installed_equipment_id="5000001072">power folding
+								</value>
+							</equipment>
+							<equipment name="Inside rearview mirror">
+								<value installed_equipment_id="5000001323">auto-dimming
+								</value>
+							</equipment>
+							<equipment name="Vanity mirrors">
+								<value installed_equipment_id="5000000630">dual
+									illuminating</value>
+							</equipment>
+						</category>
+						<category name="Passenger Seat">
+							<equipment name="Adjustable lumbar support">
+								<value installed_equipment_id="5000000728">power</value>
+							</equipment>
+							<equipment name="Heated">
+								<value installed_equipment_id="157881">multi-level heating
+								</value>
+							</equipment>
+							<equipment name="Height adjustable">
+								<value installed_equipment_id="5000000463"></value>
+							</equipment>
+							<equipment name="Power adjustments">
+								<value installed_equipment_id="5000000626"></value>
+							</equipment>
+						</category>
+						<category name="Rear Seats">
+							<equipment name="Center armrest">
+								<value installed_equipment_id="368090">folding with
+									storage</value>
+							</equipment>
+							<equipment name="Folding">
+								<value installed_equipment_id="365810">split folding
+								</value>
+							</equipment>
+							<equipment name="Rear heat">
+								<value installed_equipment_id="367619">vents</value>
+							</equipment>
+							<equipment name="Type">
+								<value installed_equipment_id="404126">60-40 split bench
+								</value>
+							</equipment>
+						</category>
+						<category name="Roof">
+							<equipment name="Sunroof">
+								<value installed_equipment_id="5000001537">one-touch
+								</value>
+								<value installed_equipment_id="331161">power glass</value>
+								<value installed_equipment_id="5000001538">sliding
+									sunshade</value>
+								<value installed_equipment_id="5000001808">tilt/slide
+								</value>
+							</equipment>
+						</category>
+						<category name="Safety">
+							<equipment name="Active head restraints">
+								<value installed_equipment_id="5000000353">dual front
+								</value>
+							</equipment>
+							<equipment name="Body side reinforcements">
+								<value installed_equipment_id="5000000368">side impact
+									door beams</value>
+							</equipment>
+							<equipment name="Crumple zones">
+								<value installed_equipment_id="5000000186">front and rear
+								</value>
+							</equipment>
+							<equipment name="Impact absorbing bumpers">
+								<value installed_equipment_id="5000000595"></value>
+							</equipment>
+							<equipment name="Impact sensor">
+								<value installed_equipment_id="177211">post-collision
+									safety system</value>
+							</equipment>
+							<equipment name="Parking sensors">
+								<value installed_equipment_id="5000001425">rear</value>
+							</equipment>
+						</category>
+						<category name="Seatbelts">
+							<equipment name="Emergency locking retractors">
+								<value installed_equipment_id="5000000367">front and rear
+								</value>
+							</equipment>
+							<equipment name="Front seatbelts">
+								<value installed_equipment_id="5000001652">3-point</value>
+							</equipment>
+							<equipment name="Seatbelt force limiters">
+								<value installed_equipment_id="330943">front</value>
+							</equipment>
+							<equipment name="Seatbelt pretensioners">
+								<value installed_equipment_id="282522">front and rear
+								</value>
+							</equipment>
+							<equipment name="Second row seatbelts">
+								<value installed_equipment_id="5000001651">3-point</value>
+							</equipment>
+						</category>
+						<category name="Seats">
+							<equipment name="Front seat type">
+								<value installed_equipment_id="401673">bucket</value>
+								<value installed_equipment_id="5000000085">reclining
+								</value>
+							</equipment>
+							<equipment name="Upholstery">
+								<value installed_equipment_id="403131">leather</value>
+							</equipment>
+						</category>
+						<category name="Security">
+							<equipment name="Anti-theft alarm system">
+								<value installed_equipment_id="5000000050"></value>
+							</equipment>
+						</category>
+						<category name="Spare Tire">
+							<equipment name="Mount Location">
+								<value installed_equipment_id="366644">inside</value>
+							</equipment>
+							<equipment name="Size">
+								<value installed_equipment_id="100145">fullsize matching
+								</value>
+							</equipment>
+						</category>
+						<category name="Spare Wheel">
+							<equipment name="Rim type">
+								<value installed_equipment_id="368444">alloy</value>
+							</equipment>
+						</category>
+						<category name="Stability and Traction">
+							<equipment name="Stability control">
+								<value installed_equipment_id="5000001162">electronic
+								</value>
+							</equipment>
+							<equipment name="Traction control">
+								<value installed_equipment_id="5000000038"></value>
+							</equipment>
+						</category>
+						<category name="Steering">
+							<equipment name="Steering ratio">
+								<value installed_equipment_id="5000001853">14.6</value>
+							</equipment>
+							<equipment name="Turns lock-to-lock">
+								<value installed_equipment_id="5000000936">2.48</value>
+							</equipment>
+						</category>
+						<category name="Suspension">
+							<equipment name="Front Arm Type">
+								<value installed_equipment_id="5000001175">short and long
+									arm (SLA)</value>
+							</equipment>
+							<equipment name="Front Shock Type">
+								<value installed_equipment_id="5000000705">gas shock
+									absorbers</value>
+							</equipment>
+							<equipment name="Front Spring Type">
+								<value installed_equipment_id="284176">coil springs
+								</value>
+							</equipment>
+							<equipment name="Front Suspension Classification">
+								<value installed_equipment_id="101366">independent</value>
+							</equipment>
+							<equipment name="Front Suspension Type">
+								<value installed_equipment_id="103696">multi-link</value>
+							</equipment>
+							<equipment name="Rear Shock Type">
+								<value installed_equipment_id="5000000704">twin-tube gas
+									shock absorbers</value>
+							</equipment>
+							<equipment name="Rear Spring Type">
+								<value installed_equipment_id="238036">coil springs
+								</value>
+							</equipment>
+							<equipment name="Rear Suspension Classification">
+								<value installed_equipment_id="103425">independent</value>
+							</equipment>
+							<equipment name="Rear Suspension Type">
+								<value installed_equipment_id="156466">multi-link</value>
+							</equipment>
+							<equipment name="Stabilizer bar(s)">
+								<value installed_equipment_id="239834">front and rear
+								</value>
+							</equipment>
+						</category>
+						<category name="Telematics">
+							<equipment name="Navigation system">
+								<value installed_equipment_id="200001193">hard drive
+									navigation system w/voice activation</value>
+							</equipment>
+							<equipment name="Phone">
+								<value installed_equipment_id="365475">pre-wired for phone
+								</value>
+								<value installed_equipment_id="365501">voice activated
+								</value>
+							</equipment>
+							<equipment name="Real Time Traffic">
+								<value installed_equipment_id="5000000397"></value>
+							</equipment>
+						</category>
+						<category name="Tires">
+							<equipment name="Tire Pressure Monitoring System">
+								<value installed_equipment_id="5000000099"></value>
+							</equipment>
+							<equipment name="Type">
+								<value installed_equipment_id="134126">all season</value>
+							</equipment>
+						</category>
+						<category name="Video System">
+							<equipment name="Video Monitor Size">
+								<value installed_equipment_id="338296">7</value>
+							</equipment>
+							<equipment name="Video monitor location">
+								<value installed_equipment_id="200003614">front</value>
+							</equipment>
+						</category>
+						<category name="Wheels">
+							<equipment name="Rim type">
+								<value installed_equipment_id="206765">alloy</value>
+							</equipment>
+							<equipment name="Wheel spokes">
+								<value installed_equipment_id="5000001318">10</value>
+							</equipment>
+						</category>
+						<category name="Windows">
+							<equipment name="Front wipers">
+								<value installed_equipment_id="5000000278">rain sensing
+								</value>
+								<value installed_equipment_id="5000000076">variable
+									intermittent</value>
+							</equipment>
+							<equipment name="Humidity/dewpoint sensors">
+								<value installed_equipment_id="5000000487"></value>
+							</equipment>
+							<equipment name="Lockout button">
+								<value installed_equipment_id="5000000202"></value>
+							</equipment>
+							<equipment name="One-touch windows">
+								<value installed_equipment_id="283832">4</value>
+							</equipment>
+							<equipment name="Power windows">
+								<value installed_equipment_id="5000001542">remote
+									operation</value>
+								<value installed_equipment_id="5000000197">with safety
+									reverse</value>
+							</equipment>
+							<equipment name="Rear defogger">
+								<value installed_equipment_id="5000000042"></value>
+							</equipment>
+							<equipment name="Tinted">
+								<value installed_equipment_id="5000000140"></value>
+							</equipment>
+						</category>
+					</installed_equipment>
+				</common_us_data>
+				<us_styles count="1">
+					<style name="AWD 4.2 quattro Prestige 4dr Sedan" vehicle_id="400874563"
+						complete="Y" market="US Light-Duty" fleet="N">
+						<basic_data>
+							<market>US Light-Duty</market>
+							<year>2011</year>
+							<make>Audi</make>
+							<model>A6</model>
+							<trim>4.2 quattro Prestige</trim>
+							<vehicle_type>Car</vehicle_type>
+							<body_type>Sedan</body_type>
+							<body_subtype></body_subtype>
+							<oem_body_style>Sedan</oem_body_style>
+							<doors>4</doors>
+							<oem_doors>4</oem_doors>
+							<model_number>4F25DL</model_number>
+							<package_code></package_code>
+							<drive_type>AWD</drive_type>
+							<brake_system>Hydraulic</brake_system>
+							<restraint_type>Driver and front passenger front airbags with
+								occupant sensing deactivation, front side airbags and front and
+								rear side curtain airbags. </restraint_type>
+							<country_of_manufacture>Germany</country_of_manufacture>
+							<plant>Neckarsulm, Germany</plant>
+						</basic_data>
+						<pricing>
+							<msrp>59150</msrp>
+							<invoice_price>55010</invoice_price>
+							<destination_charge>875</destination_charge>
+							<gas_guzzler_tax>0</gas_guzzler_tax>
+						</pricing>
+						<engines>
+							<engine name="4.2L V8 350hp 325ft. lbs." brand=""
+								marketing_name="" engine_id="200351">
+								<availability>Installed</availability>
+								<aspiration>N/A</aspiration>
+								<block_type>V</block_type>
+								<bore>3.33</bore>
+								<cam_type>DOHC</cam_type>
+								<compression>12.5</compression>
+								<cylinders>8</cylinders>
+								<displacement>4.2</displacement>
+								<fuel_induction>DI</fuel_induction>
+								<fuel_quality>93</fuel_quality>
+								<fuel_type>G</fuel_type>
+								<msrp>0</msrp>
+								<invoice_price>0</invoice_price>
+								<marketing_name></marketing_name>
+								<max_hp>350</max_hp>
+								<max_hp_at>6800</max_hp_at>
+								<max_payload></max_payload>
+								<max_torque>325</max_torque>
+								<max_torque_at>3500</max_torque_at>
+								<oil_capacity>8.4</oil_capacity>
+								<order_code></order_code>
+								<redline></redline>
+								<stroke>3.65</stroke>
+								<valve_timing>VVT</valve_timing>
+								<valves>32</valves>
+							</engine>
+						</engines>
+						<transmissions>
+							<transmission name="6-Speed Shiftable Automatic"
+								brand="" marketing_name="Tiptronic" transmission_id="230943">
+								<availability>Installed</availability>
+								<type>A</type>
+								<detail_type>Shiftable Automatic</detail_type>
+								<gears>6</gears>
+								<order_code></order_code>
+								<msrp>0</msrp>
+								<invoice_price>0</invoice_price>
+							</transmission>
+						</transmissions>
+						<specifications>
+							<category name="Drive Type">
+								<specification name="Drive Type"><value>AWD</value></specification>
+							</category>
+							<category name="Fuel Tanks">
+								<specification name="Fuel Tank 1 Capacity (Gallons)">21.1</specification>
+							</category>
+							<category name="Interior Dimensions">
+								<specification name="Cargo Volume">15.9</specification>
+								<specification name="Interior Volume">97.4</specification>
+							</category>
+							<category name="Measurements of Size and Shape">
+								<specification name="Front Track Width">63.5</specification>
+								<specification name="Ground Clearance">4.6</specification>
+								<specification name="Height">57.4</specification>
+								<specification name="Length">193.5</specification>
+								<specification name="Rear Track Width">64</specification>
+								<specification name="Wheelbase">111.9</specification>
+								<specification name="Width">79.9</specification>
+								<specification name="Width without Mirrors">73</specification>
+							</category>
+							<category name="Measurements of Weight">
+								<specification name="Curb Weight">4211</specification>
+							</category>
+							<category name="Performance Specifications">
+								<specification name="Acceleration (0-60MPH)">5.8</specification>
+								<specification name="Aerodynamic Drag">0.29</specification>
+								<specification name="Turning Circle">39</specification>
+							</category>
+							<category name="Seating">
+								<specification name="Head Room 1st Row">38.7</specification>
+								<specification name="Head Room 2nd Row/Rear">37.8</specification>
+								<specification name="Leg Room 1st Row">41.3</specification>
+								<specification name="Leg Room 2nd Row/Rear">36.9</specification>
+								<specification name="Max Seating">5</specification>
+								<specification name="Seating Rows">2</specification>
+								<specification name="Shoulder Room 1st Row">57.1</specification>
+								<specification name="Shoulder Room 2nd Row/Rear">55.9</specification>
+								<specification name="Standard Seating">5</specification>
+							</category>
+							<category name="Wheels and Tires">
+								<specification name="Front Tire Type">P245/40R18</specification>
+								<specification name="Front Wheel Diameter">18</specification>
+							</category>
+						</specifications>
+						<installed_equipment>
+							<category name="Air Conditioning">
+								<equipment name="Air filtration">
+									<value installed_equipment_id="281731">active charcoal
+									</value>
+								</equipment>
+								<equipment name="Front air conditioning">
+									<value installed_equipment_id="157034">automatic climate
+										control</value>
+								</equipment>
+								<equipment name="Front air conditioning zones">
+									<value installed_equipment_id="237877">dual</value>
+								</equipment>
+								<equipment name="Rear air conditioning">
+									<value installed_equipment_id="5000001482">with
+										independent controls</value>
+								</equipment>
+								<equipment name="Rear air conditioning zones">
+									<value installed_equipment_id="238681">single</value>
+								</equipment>
+							</category>
+							<category name="Airbags">
+								<equipment name="Front airbags">
+									<value installed_equipment_id="5000000033">dual</value>
+								</equipment>
+								<equipment name="Passenger airbag deactivation">
+									<value installed_equipment_id="100450">occupant sensing
+										deactivation</value>
+								</equipment>
+								<equipment name="Side airbags">
+									<value installed_equipment_id="156025">front</value>
+								</equipment>
+								<equipment name="Side curtain airbags">
+									<value installed_equipment_id="5000000032">front and rear
+									</value>
+								</equipment>
+							</category>
+							<category name="Audio System">
+								<equipment name="Antenna Type">
+									<value installed_equipment_id="205919">diversity</value>
+								</equipment>
+								<equipment name="Auxiliary audio input">
+									<value installed_equipment_id="5000001939">iPod/iPhone
+										integration</value>
+									<value installed_equipment_id="5000001324">jack</value>
+									<value installed_equipment_id="5000001327">memory card
+										slot</value>
+								</equipment>
+								<equipment name="CD changer">
+									<value installed_equipment_id="401446">6</value>
+								</equipment>
+								<equipment name="Digital Sound Processing">
+									<value installed_equipment_id="5000000392"></value>
+								</equipment>
+								<equipment name="Hard Drive">
+									<value installed_equipment_id="5000001583">40GB</value>
+								</equipment>
+								<equipment name="In-Dash CD">
+									<value installed_equipment_id="300136">single CD/DVD
+									</value>
+								</equipment>
+								<equipment name="MP3 player">
+									<value installed_equipment_id="284886">CD MP3 Playback
+									</value>
+								</equipment>
+								<equipment name="Premium Brand">
+									<value installed_equipment_id="101935">Bose</value>
+								</equipment>
+								<equipment name="Radio">
+									<value installed_equipment_id="403418">AM/FM</value>
+									<value installed_equipment_id="5000001344">HD radio
+									</value>
+								</equipment>
+								<equipment name="Radio Data System">
+									<value installed_equipment_id="5000000184"></value>
+								</equipment>
+								<equipment name="Remote CD changer location">
+									<value installed_equipment_id="239532">in glove
+										compartment</value>
+								</equipment>
+								<equipment name="Satellite Radio">
+									<value installed_equipment_id="101157">Sirius</value>
+								</equipment>
+								<equipment name="Speed Sensitive Volume Control">
+									<value installed_equipment_id="403893">adjustable</value>
+								</equipment>
+								<equipment name="Subwoofer">
+									<value installed_equipment_id="285188">1</value>
+								</equipment>
+								<equipment name="Surround audio">
+									<value installed_equipment_id="157220">5.1</value>
+								</equipment>
+								<equipment name="Total Number of Speakers">
+									<value installed_equipment_id="402745">12</value>
+								</equipment>
+							</category>
+							<category name="Brakes">
+								<equipment name="ABS">
+									<value installed_equipment_id="5000000168">4-wheel
+									</value>
+								</equipment>
+								<equipment name="Brake drying">
+									<value installed_equipment_id="121189"></value>
+								</equipment>
+								<equipment name="Braking assist">
+									<value installed_equipment_id="5000000315">hill start
+										assist</value>
+								</equipment>
+								<equipment name="Electronic brakeforce distribution">
+									<value installed_equipment_id="5000000122"></value>
+								</equipment>
+								<equipment name="Electronic parking brake">
+									<value installed_equipment_id="5000000854"></value>
+								</equipment>
+								<equipment name="Emergency braking assist">
+									<value installed_equipment_id="5000000462"></value>
+								</equipment>
+								<equipment name="Front brake diameter">
+									<value installed_equipment_id="328284">13.7</value>
+								</equipment>
+								<equipment name="Front brakes">
+									<value installed_equipment_id="401854">ventilated disc
+									</value>
+								</equipment>
+								<equipment name="Rear brake diameter">
+									<value installed_equipment_id="155124">13.0</value>
+								</equipment>
+								<equipment name="Rear brakes">
+									<value installed_equipment_id="5000002029">solid disc
+									</value>
+								</equipment>
+							</category>
+							<category name="Child Safety">
+								<equipment name="Child safety locks">
+									<value installed_equipment_id="5000000116"></value>
+								</equipment>
+								<equipment name="Child seat anchors">
+									<value installed_equipment_id="5000000117">LATCH system
+									</value>
+								</equipment>
+								<equipment name="Emergency interior trunk release">
+									<value installed_equipment_id="5000000369"></value>
+								</equipment>
+							</category>
+							<category name="Comfort Features">
+								<equipment name="Armrests">
+									<value installed_equipment_id="5000000516">front center
+									</value>
+								</equipment>
+								<equipment name="Cargo area light">
+									<value installed_equipment_id="5000000052"></value>
+								</equipment>
+								<equipment name="Center console trim">
+									<value installed_equipment_id="330161">wood</value>
+								</equipment>
+								<equipment name="Dash trim">
+									<value installed_equipment_id="158565">alloy, leather and
+										wood</value>
+								</equipment>
+								<equipment name="Door sill trim">
+									<value installed_equipment_id="5000001195">aluminum
+									</value>
+								</equipment>
+								<equipment name="Door trim">
+									<value installed_equipment_id="404281">alloy, leather and
+										wood</value>
+								</equipment>
+								<equipment name="Floor Mat Material">
+									<value installed_equipment_id="102938">carpet</value>
+								</equipment>
+								<equipment name="Floor Mats">
+									<value installed_equipment_id="5000000502">front and rear
+									</value>
+								</equipment>
+								<equipment name="Reading lights">
+									<value installed_equipment_id="401503">front and rear
+									</value>
+								</equipment>
+								<equipment name="Shift knob trim">
+									<value installed_equipment_id="254816">alloy, leather and
+										wood</value>
+								</equipment>
+								<equipment name="Steering wheel trim">
+									<value installed_equipment_id="403289">leather</value>
+								</equipment>
+							</category>
+							<category name="Convenience Features">
+								<equipment name="Assist handle">
+									<value installed_equipment_id="5000000870">front and rear
+									</value>
+								</equipment>
+								<equipment name="Center console">
+									<value installed_equipment_id="237714">front console with
+										storage</value>
+								</equipment>
+								<equipment name="Cruise control">
+									<value installed_equipment_id="5000000053"></value>
+								</equipment>
+								<equipment name="Cupholders">
+									<value installed_equipment_id="101712">front and rear
+									</value>
+								</equipment>
+								<equipment name="First aid kit">
+									<value installed_equipment_id="5000000681"></value>
+								</equipment>
+								<equipment name="Multi-function remote">
+									<value installed_equipment_id="5000000836">controls fuel
+										filler</value>
+									<value installed_equipment_id="365716">hands-free
+										multi-function remote with keyless ignition</value>
+									<value installed_equipment_id="5000000143">keyless entry
+									</value>
+								</equipment>
+								<equipment name="Overhead console">
+									<value installed_equipment_id="284008">with storage
+									</value>
+								</equipment>
+								<equipment name="Power outlet(s)">
+									<value installed_equipment_id="5000000886">front and rear
+									</value>
+								</equipment>
+								<equipment name="Power steering">
+									<value installed_equipment_id="402083">speed-proportional
+									</value>
+								</equipment>
+								<equipment name="Rear view camera">
+									<value installed_equipment_id="5000000496"></value>
+								</equipment>
+								<equipment name="Rear view monitor">
+									<value installed_equipment_id="3210500031"></value>
+								</equipment>
+								<equipment name="Remote trunk release">
+									<value installed_equipment_id="5000000125"></value>
+								</equipment>
+								<equipment name="Retained accessory power">
+									<value installed_equipment_id="5000000055"></value>
+								</equipment>
+								<equipment name="Steering wheel">
+									<value installed_equipment_id="5000001281">power tilt and
+										telescopic</value>
+								</equipment>
+								<equipment name="Steering wheel mounted controls">
+									<value installed_equipment_id="5000001404">audio and
+										cruise controls</value>
+									<value installed_equipment_id="5000001402">navigation
+									</value>
+									<value installed_equipment_id="5000001419">paddle shifter
+									</value>
+									<value installed_equipment_id="5000001400">phone</value>
+									<value installed_equipment_id="5000001622">voice
+										recognition controls</value>
+								</equipment>
+								<equipment name="Storage">
+									<value installed_equipment_id="5000001559">cargo net
+									</value>
+									<value installed_equipment_id="5000001512">cargo tie-down
+										anchors and hooks</value>
+									<value installed_equipment_id="5000001445">door pockets -
+										front and rear</value>
+									<value installed_equipment_id="5000001436">front seatback
+									</value>
+									<value installed_equipment_id="5000001440">grocery bag
+										holder</value>
+								</equipment>
+								<equipment name="Sun visors">
+									<value installed_equipment_id="5000001193"></value>
+								</equipment>
+								<equipment name="Tool kit">
+									<value installed_equipment_id="5000001516">
+									</value>
+								</equipment>
+								<equipment name="Universal garage door opener">
+									<value installed_equipment_id="5000001414">Homelink
+									</value>
+								</equipment>
+							</category>
+							<category name="Driver Seat">
+								<equipment name="Adjustable lumbar support">
+									<value installed_equipment_id="5000000727">power</value>
+								</equipment>
+								<equipment name="Heated">
+									<value installed_equipment_id="207825">multi-level
+										heating</value>
+								</equipment>
+								<equipment name="Height adjustable">
+									<value installed_equipment_id="5000000362"></value>
+								</equipment>
+								<equipment name="Power adjustments">
+									<value installed_equipment_id="5000000342"></value>
+								</equipment>
+							</category>
+							<category name="Drivetrain">
+								<equipment name="4WD Type">
+									<value installed_equipment_id="100972">full time</value>
+								</equipment>
+								<equipment name="Axle ratio">
+									<value installed_equipment_id="367356">3.31</value>
+								</equipment>
+								<equipment name="Center differential">
+									<value installed_equipment_id="156777">mechanical</value>
+								</equipment>
+								<equipment name="Locking differential">
+									<value installed_equipment_id="602532">front and rear
+									</value>
+								</equipment>
+							</category>
+							<category name="Engine">
+								<equipment name="Alternator">
+									<value installed_equipment_id="5000001644">190 amps
+									</value>
+								</equipment>
+								<equipment name="Battery saver">
+									<value installed_equipment_id="5000000525"></value>
+								</equipment>
+								<equipment name="Push-button Start">
+									<value installed_equipment_id="5000000619"></value>
+								</equipment>
+							</category>
+							<category name="Exterior Features">
+								<equipment name="Bumper color">
+									<value installed_equipment_id="5000000443">body-color
+									</value>
+								</equipment>
+								<equipment name="Door handle color">
+									<value installed_equipment_id="5000000340">body-color
+									</value>
+								</equipment>
+								<equipment name="Exhaust">
+									<value installed_equipment_id="5000001522">dual exhaust
+										tips</value>
+								</equipment>
+								<equipment name="Exhaust tip color">
+									<value installed_equipment_id="5000001661">polished
+										aluminum</value>
+								</equipment>
+								<equipment name="Front Air Dam">
+									<value installed_equipment_id="5000000998"></value>
+								</equipment>
+								<equipment name="Grille color">
+									<value installed_equipment_id="5000000602">chrome</value>
+								</equipment>
+								<equipment name="Mirror color">
+									<value installed_equipment_id="5000000297">body-color
+									</value>
+								</equipment>
+								<equipment name="Rear spoiler">
+									<value installed_equipment_id="5000000067"></value>
+								</equipment>
+								<equipment name="Rear spoiler color">
+									<value installed_equipment_id="5000000593">body-color
+									</value>
+								</equipment>
+								<equipment name="Window trim">
+									<value installed_equipment_id="5000001817">silver</value>
+								</equipment>
+							</category>
+							<category name="Headrests">
+								<equipment name="Adjustable rear headrests">
+									<value installed_equipment_id="283447">height adjustable
+									</value>
+								</equipment>
+								<equipment name="Front headrests">
+									<value installed_equipment_id="206395">height adjustable
+									</value>
+								</equipment>
+								<equipment name="Number of front headrests">
+									<value installed_equipment_id="366390">2</value>
+								</equipment>
+								<equipment name="Number of rear headrests">
+									<value installed_equipment_id="282822">3</value>
+								</equipment>
+							</category>
+							<category name="Instrumentation">
+								<equipment name="Compass">
+									<value installed_equipment_id="5000000159"></value>
+								</equipment>
+								<equipment name="External temperature display">
+									<value installed_equipment_id="5000000458"></value>
+								</equipment>
+								<equipment name="Fuel economy display">
+									<value installed_equipment_id="5000001346">MPG and range
+									</value>
+								</equipment>
+								<equipment name="Multi-function display">
+									<value installed_equipment_id="5000000553"></value>
+								</equipment>
+								<equipment name="Tachometer">
+									<value installed_equipment_id="5000000044"></value>
+								</equipment>
+								<equipment name="Trip computer">
+									<value installed_equipment_id="100001"></value>
+								</equipment>
+								<equipment name="Trip odometer">
+									<value installed_equipment_id="5000001711"></value>
+								</equipment>
+								<equipment name="Warnings and reminders">
+									<value installed_equipment_id="5000000497">lamp failure,
+										low fuel, engine oil, coolant</value>
+									<value installed_equipment_id="5000001527">maintenance
+										reminder</value>
+								</equipment>
+							</category>
+							<category name="Interior">
+								<equipment name="Woodgrain accents">
+									<value installed_equipment_id="5000000520"></value>
+								</equipment>
+							</category>
+							<category name="Lights">
+								<equipment name="Ambient lighting">
+									<value installed_equipment_id="5000001450">
+									</value>
+								</equipment>
+								<equipment name="Courtesy console lights">
+									<value installed_equipment_id="5000000567"></value>
+								</equipment>
+								<equipment name="Daytime running lights">
+									<value installed_equipment_id="103082"></value>
+								</equipment>
+								<equipment name="Exterior entry lights">
+									<value installed_equipment_id="5000001535">security
+										approach lamps</value>
+								</equipment>
+								<equipment name="Footwell lights">
+									<value installed_equipment_id="5000000227"></value>
+								</equipment>
+								<equipment name="Front fog lights">
+									<value installed_equipment_id="5000000068"></value>
+								</equipment>
+								<equipment name="Headlight cleaners">
+									<value installed_equipment_id="5000000850">heated</value>
+									<value installed_equipment_id="238197">high pressure
+										washers</value>
+								</equipment>
+								<equipment name="Headlights">
+									<value installed_equipment_id="5000001530">Xenon</value>
+									<value installed_equipment_id="3710500001">adaptive
+									</value>
+									<value installed_equipment_id="5000001626">auto delay off
+									</value>
+									<value installed_equipment_id="200001450">cornering
+									</value>
+									<value installed_equipment_id="5000001532">dusk sensing
+									</value>
+									<value installed_equipment_id="5000001749">self-leveling
+									</value>
+									<value installed_equipment_id="5000001607">wiper
+										activated</value>
+								</equipment>
+								<equipment name="Puddle lamps">
+									<value installed_equipment_id="5000000529"></value>
+								</equipment>
+								<equipment name="Rear fog lights">
+									<value installed_equipment_id="240529"></value>
+								</equipment>
+								<equipment name="Tail and brake lights">
+									<value installed_equipment_id="5000000446">LED</value>
+								</equipment>
+							</category>
+							<category name="Locks">
+								<equipment name="2-stage unlocking">
+									<value installed_equipment_id="367063">remote</value>
+								</equipment>
+								<equipment name="Power door locks">
+									<value installed_equipment_id="5000000629">remote</value>
+								</equipment>
+							</category>
+							<category name="Memorized Settings">
+								<equipment name="Includes driver seat">
+									<value installed_equipment_id="5000000286"></value>
+								</equipment>
+								<equipment name="Includes exterior mirrors">
+									<value installed_equipment_id="5000000299"></value>
+								</equipment>
+								<equipment name="Number of drivers">
+									<value installed_equipment_id="104245">2</value>
+								</equipment>
+							</category>
+							<category name="Mirrors">
+								<equipment name="Exterior mirrors">
+									<value installed_equipment_id="5000000843">auto-dimming
+									</value>
+									<value installed_equipment_id="5000000732">heated</value>
+									<value installed_equipment_id="5000000341">integrated
+										turn signals</value>
+									<value installed_equipment_id="5000000642">power</value>
+									<value installed_equipment_id="5000001072">power folding
+									</value>
+								</equipment>
+								<equipment name="Inside rearview mirror">
+									<value installed_equipment_id="5000001323">auto-dimming
+									</value>
+								</equipment>
+								<equipment name="Vanity mirrors">
+									<value installed_equipment_id="5000000630">dual
+										illuminating</value>
+								</equipment>
+							</category>
+							<category name="Passenger Seat">
+								<equipment name="Adjustable lumbar support">
+									<value installed_equipment_id="5000000728">power</value>
+								</equipment>
+								<equipment name="Heated">
+									<value installed_equipment_id="157881">multi-level
+										heating</value>
+								</equipment>
+								<equipment name="Height adjustable">
+									<value installed_equipment_id="5000000463"></value>
+								</equipment>
+								<equipment name="Power adjustments">
+									<value installed_equipment_id="5000000626"></value>
+								</equipment>
+							</category>
+							<category name="Rear Seats">
+								<equipment name="Center armrest">
+									<value installed_equipment_id="368090">folding with
+										storage</value>
+								</equipment>
+								<equipment name="Folding">
+									<value installed_equipment_id="365810">split folding
+									</value>
+								</equipment>
+								<equipment name="Rear heat">
+									<value installed_equipment_id="367619">vents</value>
+								</equipment>
+								<equipment name="Type">
+									<value installed_equipment_id="404126">60-40 split bench
+									</value>
+								</equipment>
+							</category>
+							<category name="Roof">
+								<equipment name="Sunroof">
+									<value installed_equipment_id="5000001537">one-touch
+									</value>
+									<value installed_equipment_id="331161">power glass
+									</value>
+									<value installed_equipment_id="5000001538">sliding
+										sunshade</value>
+									<value installed_equipment_id="5000001808">tilt/slide
+									</value>
+								</equipment>
+							</category>
+							<category name="Safety">
+								<equipment name="Active head restraints">
+									<value installed_equipment_id="5000000353">dual front
+									</value>
+								</equipment>
+								<equipment name="Body side reinforcements">
+									<value installed_equipment_id="5000000368">side impact
+										door beams</value>
+								</equipment>
+								<equipment name="Crumple zones">
+									<value installed_equipment_id="5000000186">front and rear
+									</value>
+								</equipment>
+								<equipment name="Impact absorbing bumpers">
+									<value installed_equipment_id="5000000595"></value>
+								</equipment>
+								<equipment name="Impact sensor">
+									<value installed_equipment_id="177211">post-collision
+										safety system</value>
+								</equipment>
+								<equipment name="Parking sensors">
+									<value installed_equipment_id="5000001425">rear</value>
+								</equipment>
+							</category>
+							<category name="Seatbelts">
+								<equipment name="Emergency locking retractors">
+									<value installed_equipment_id="5000000367">front and rear
+									</value>
+								</equipment>
+								<equipment name="Front seatbelts">
+									<value installed_equipment_id="5000001652">3-point
+									</value>
+								</equipment>
+								<equipment name="Seatbelt force limiters">
+									<value installed_equipment_id="330943">front</value>
+								</equipment>
+								<equipment name="Seatbelt pretensioners">
+									<value installed_equipment_id="282522">front and rear
+									</value>
+								</equipment>
+								<equipment name="Second row seatbelts">
+									<value installed_equipment_id="5000001651">3-point
+									</value>
+								</equipment>
+							</category>
+							<category name="Seats">
+								<equipment name="Front seat type">
+									<value installed_equipment_id="401673">bucket</value>
+									<value installed_equipment_id="5000000085">reclining
+									</value>
+								</equipment>
+								<equipment name="Upholstery">
+									<value installed_equipment_id="403131">leather</value>
+								</equipment>
+							</category>
+							<category name="Security">
+								<equipment name="Anti-theft alarm system">
+									<value installed_equipment_id="5000000050"></value>
+								</equipment>
+							</category>
+							<category name="Spare Tire">
+								<equipment name="Mount Location">
+									<value installed_equipment_id="366644">inside</value>
+								</equipment>
+								<equipment name="Size">
+									<value installed_equipment_id="100145">fullsize matching
+									</value>
+								</equipment>
+							</category>
+							<category name="Spare Wheel">
+								<equipment name="Rim type">
+									<value installed_equipment_id="368444">alloy</value>
+								</equipment>
+							</category>
+							<category name="Stability and Traction">
+								<equipment name="Stability control">
+									<value installed_equipment_id="5000001162">electronic
+									</value>
+								</equipment>
+								<equipment name="Traction control">
+									<value installed_equipment_id="5000000038"></value>
+								</equipment>
+							</category>
+							<category name="Steering">
+								<equipment name="Steering ratio">
+									<value installed_equipment_id="5000001853">14.6</value>
+								</equipment>
+								<equipment name="Turns lock-to-lock">
+									<value installed_equipment_id="5000000936">2.48</value>
+								</equipment>
+							</category>
+							<category name="Suspension">
+								<equipment name="Front Arm Type">
+									<value installed_equipment_id="5000001175">short and long
+										arm (SLA)</value>
+								</equipment>
+								<equipment name="Front Shock Type">
+									<value installed_equipment_id="5000000705">gas shock
+										absorbers</value>
+								</equipment>
+								<equipment name="Front Spring Type">
+									<value installed_equipment_id="284176">coil springs
+									</value>
+								</equipment>
+								<equipment name="Front Suspension Classification">
+									<value installed_equipment_id="101366">independent
+									</value>
+								</equipment>
+								<equipment name="Front Suspension Type">
+									<value installed_equipment_id="103696">multi-link</value>
+								</equipment>
+								<equipment name="Rear Shock Type">
+									<value installed_equipment_id="5000000704">twin-tube gas
+										shock absorbers</value>
+								</equipment>
+								<equipment name="Rear Spring Type">
+									<value installed_equipment_id="238036">coil springs
+									</value>
+								</equipment>
+								<equipment name="Rear Suspension Classification">
+									<value installed_equipment_id="103425">independent
+									</value>
+								</equipment>
+								<equipment name="Rear Suspension Type">
+									<value installed_equipment_id="156466">multi-link</value>
+								</equipment>
+								<equipment name="Stabilizer bar(s)">
+									<value installed_equipment_id="239834">front and rear
+									</value>
+								</equipment>
+							</category>
+							<category name="Telematics">
+								<equipment name="Navigation system">
+									<value installed_equipment_id="200001193">hard drive
+										navigation system w/voice activation</value>
+								</equipment>
+								<equipment name="Phone">
+									<value installed_equipment_id="365475">pre-wired for
+										phone</value>
+									<value installed_equipment_id="365501">voice activated
+									</value>
+								</equipment>
+								<equipment name="Real Time Traffic">
+									<value installed_equipment_id="5000000397"></value>
+								</equipment>
+							</category>
+							<category name="Tires">
+								<equipment name="Tire Pressure Monitoring System">
+									<value installed_equipment_id="5000000099"></value>
+								</equipment>
+								<equipment name="Type">
+									<value installed_equipment_id="134126">all season</value>
+								</equipment>
+							</category>
+							<category name="Video System">
+								<equipment name="Video Monitor Size">
+									<value installed_equipment_id="338296">7</value>
+								</equipment>
+								<equipment name="Video monitor location">
+									<value installed_equipment_id="200003614">front</value>
+								</equipment>
+							</category>
+							<category name="Wheels">
+								<equipment name="Rim type">
+									<value installed_equipment_id="206765">alloy</value>
+								</equipment>
+								<equipment name="Wheel spokes">
+									<value installed_equipment_id="5000001318">10</value>
+								</equipment>
+							</category>
+							<category name="Windows">
+								<equipment name="Front wipers">
+									<value installed_equipment_id="5000000278">rain sensing
+									</value>
+									<value installed_equipment_id="5000000076">variable
+										intermittent</value>
+								</equipment>
+								<equipment name="Humidity/dewpoint sensors">
+									<value installed_equipment_id="5000000487"></value>
+								</equipment>
+								<equipment name="Lockout button">
+									<value installed_equipment_id="5000000202"></value>
+								</equipment>
+								<equipment name="One-touch windows">
+									<value installed_equipment_id="283832">4</value>
+								</equipment>
+								<equipment name="Power windows">
+									<value installed_equipment_id="5000001542">remote
+										operation</value>
+									<value installed_equipment_id="5000000197">with safety
+										reverse</value>
+								</equipment>
+								<equipment name="Rear defogger">
+									<value installed_equipment_id="5000000042"></value>
+								</equipment>
+								<equipment name="Tinted">
+									<value installed_equipment_id="5000000140"></value>
+								</equipment>
+							</category>
+						</installed_equipment>
+						<optional_equipment>
+							<category name="Engine">
+								<option name="Northeast Trading Region Emission Requirements"
+									option_id="147070" order_code="1QE" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>0</invoice_price>
+									<msrp>0</msrp>
+									<description><![CDATA[]]>
+									</description>
+								</option>
+								<option name="California Emissions" option_id="191815"
+									order_code="0LM" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>0</invoice_price>
+									<msrp>0</msrp>
+									<description><![CDATA[Includes emissions controls required for vehicles sold in California.]]></description>
+								</option>
+							</category>
+							<category name="Exterior Features">
+								<option name="Front License Plate Holder" option_id="150496"
+									order_code="6W3" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>0</invoice_price>
+									<msrp>0</msrp>
+									<description><![CDATA[Includes front license plate holder for states which require front license plates.]]></description>
+								</option>
+								<option name="Front Grille Filler Panel" option_id="161376"
+									order_code="6W9" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>0</invoice_price>
+									<msrp>0</msrp>
+									<description><![CDATA[Includes front grille filler panel with chrome strips for states without license plate requirement.]]></description>
+								</option>
+							</category>
+							<category name="Safety">
+								<option name="Rear Side Airbags" option_id="151739"
+									order_code="4X4" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>325</invoice_price>
+									<msrp>350</msrp>
+									<description><![CDATA[Includes rear seat side thorax airbags.]]></description>
+								</option>
+								<option name="Audi Side Assist" option_id="300003349"
+									order_code="7Y1" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>466</invoice_price>
+									<msrp>500</msrp>
+									<description><![CDATA[Audi side assist monitors the blind spot areas as well as fast-approaching vehicles at a range of 150 ft to the rear of the car. If Audi side assist identifies another vehicle, it informs the driver via an LED light in the exterior mirror.]]></description>
+								</option>
+							</category>
+							<category name="Interior">
+								<option name="All Weather Floor Mats (set of 4) and Trunk  Liner"
+									option_id="300004126" order_code="6PK" installed="UK" fleet="N">
+									<install_type>Port Installed Option</install_type>
+									<invoice_price>186</invoice_price>
+									<msrp>200</msrp>
+									<description><![CDATA[Includes precision-fit mats that are skid-resistant.]]></description>
+								</option>
+								<option name="Cargo Beach Mat" option_id="300010187"
+									order_code="6BM" installed="UK" fleet="N">
+									<install_type>Port Installed Option</install_type>
+									<invoice_price>103</invoice_price>
+									<msrp>110</msrp>
+									<description><![CDATA[]]>
+									</description>
+								</option>
+							</category>
+							<category name="Tires and Rims">
+								<option name="Wheel Lock Kit" option_id="300006338"
+									order_code="WL3" installed="UK" fleet="N">
+									<install_type>Port Installed Option</install_type>
+									<invoice_price>74</invoice_price>
+									<msrp>80</msrp>
+									<description><![CDATA[Includes wheel locks for the alloy wheels.]]></description>
+								</option>
+							</category>
+							<category name="Marketing Package">
+								<option name="18 In. Sport Package" option_id="300007070"
+									order_code="PPS" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>930</invoice_price>
+									<msrp>1000</msrp>
+									<description><![CDATA[Includes all-season tires, 18-inch wheels, sport suspension and 3 spoke multifunction sport steering wheel with shift paddles.]]></description>
+								</option>
+								<option name="19 In. Sport Package" option_id="300007071"
+									order_code="PSR" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>1396</invoice_price>
+									<msrp>1500</msrp>
+									<description><![CDATA[Includes summer performance tires, 19-inch wheels, sport suspension and 3 spoke multifunction sport steering wheel with shift paddles.]]></description>
+								</option>
+								<option name="Cold Weather Package" option_id="300007073"
+									order_code="PAW" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>419</invoice_price>
+									<msrp>450</msrp>
+									<description><![CDATA[Includes heated rear seats and 4 spoke multifunction steering wheel, heated and with shift paddles.]]></description>
+								</option>
+							</category>
+							<category name="Seats">
+								<option name="Amaretto Brown Milano Leather  Seats"
+									option_id="300010829" order_code="N5W" installed="UK" fleet="N">
+									<install_type>Factory Installed Option</install_type>
+									<invoice_price>930</invoice_price>
+									<msrp>1000</msrp>
+									<description><![CDATA[]]>
+									</description>
+								</option>
+							</category>
+						</optional_equipment>
+						<colors>
+							<exterior_colors>
+								<color mfr_code="A2" two_tone="N">
+									<generic_color_name>Black</generic_color_name>
+									<mfr_color_name>Brilliant Black</mfr_color_name>
+									<primary_rgb_code r="0" g="0" b="0" hex="000000"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="X1" two_tone="N">
+									<generic_color_name>Gray</generic_color_name>
+									<mfr_color_name>Oyster Gray Metallic</mfr_color_name>
+									<primary_rgb_code r="43" g="46" b="53" hex="2B2E35"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="7X" two_tone="N">
+									<generic_color_name>Blue</generic_color_name>
+									<mfr_color_name>Night Blue Pearl Effect</mfr_color_name>
+									<primary_rgb_code r="56" g="71" b="92" hex="38475C"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="5Q" two_tone="N">
+									<generic_color_name>Gray</generic_color_name>
+									<mfr_color_name>Condor Gray Metallic</mfr_color_name>
+									<primary_rgb_code r="85" g="97" b="97" hex="556161"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="7Y" two_tone="N">
+									<generic_color_name>Blue</generic_color_name>
+									<mfr_color_name>Aventurine Blue Pearl Effect</mfr_color_name>
+									<primary_rgb_code r="39" g="75" b="127" hex="274B7F"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="L8" two_tone="N">
+									<generic_color_name>Black</generic_color_name>
+									<mfr_color_name>Phantom Black Pearl Effect</mfr_color_name>
+									<primary_rgb_code r="0" g="0" b="0" hex="000000"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="T9" two_tone="N">
+									<generic_color_name>White</generic_color_name>
+									<mfr_color_name>Ibis White</mfr_color_name>
+									<primary_rgb_code r="255" g="255" b="255" hex="FFFFFF"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="P5" two_tone="N">
+									<generic_color_name>Silver</generic_color_name>
+									<mfr_color_name>Ice Silver Metallic</mfr_color_name>
+									<primary_rgb_code r="190" g="190" b="190" hex="BEBEBE"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="Q4" two_tone="N">
+									<generic_color_name>Gray</generic_color_name>
+									<mfr_color_name>Quartz Gray Metallic</mfr_color_name>
+									<primary_rgb_code r="97" g="100" b="105" hex="616469"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+							</exterior_colors>
+							<interior_colors>
+								<color mfr_code="GV" two_tone="N">
+									<generic_color_name>Lt. Gray</generic_color_name>
+									<mfr_color_name>Light Gray</mfr_color_name>
+									<primary_rgb_code r="124" g="127" b="119" hex="7C7F77"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="GX" two_tone="N">
+									<generic_color_name>Beige</generic_color_name>
+									<mfr_color_name>Cardamon Beige</mfr_color_name>
+									<primary_rgb_code r="185" g="178" b="160" hex="B9B2A0"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="GU" two_tone="Y">
+									<generic_color_name>Beige</generic_color_name>
+									<mfr_color_name>Amaretto/Black</mfr_color_name>
+									<primary_rgb_code r="144" g="99" b="70" hex="906346"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="GD" two_tone="N">
+									<generic_color_name>Black</generic_color_name>
+									<mfr_color_name>Black</mfr_color_name>
+									<primary_rgb_code r="0" g="0" b="0" hex="000000"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+								<color mfr_code="LR" two_tone="N">
+									<generic_color_name>Beige</generic_color_name>
+									<mfr_color_name>Amaretto</mfr_color_name>
+									<primary_rgb_code r="168" g="136" b="98" hex="A88862"></primary_rgb_code>
+									<secondary_rgb_code r="0" g="0" b="0" hex="000000"></secondary_rgb_code>
+								</color>
+							</interior_colors>
+							<roof_colors></roof_colors>
+						</colors>
+						<safety_equipment>
+							<abs_two_wheel>Not Available</abs_two_wheel>
+							<abs_four_wheel>Standard</abs_four_wheel>
+							<airbags_front_driver>Standard</airbags_front_driver>
+							<airbags_front_passenger>Standard</airbags_front_passenger>
+							<airbags_side_impact>Standard</airbags_side_impact>
+							<airbags_side_curtain>Standard</airbags_side_curtain>
+							<brake_assist>Standard</brake_assist>
+							<daytime_running_lights>Standard</daytime_running_lights>
+							<electronic_stability_control>Standard</electronic_stability_control>
+							<electronic_traction_control>Standard</electronic_traction_control>
+							<tire_pressure_monitoring_system>Standard</tire_pressure_monitoring_system>
+							<rollover_stability_control>Not Available</rollover_stability_control>
+						</safety_equipment>
+						<warranties>
+							<warranty name="New Car Basic Warranty">
+								<type>Basic</type>
+								<months>48</months>
+								<miles>50000</miles>
+							</warranty>
+							<warranty name="First Scheduled Maintenance">
+								<type>Maintenance</type>
+								<months>12</months>
+								<miles>5000</miles>
+							</warranty>
+							<warranty name="24 Hour Roadside Assistance">
+								<type>Roadside Assistance</type>
+								<months>48</months>
+								<miles>0</miles>
+							</warranty>
+							<warranty name="Corrosion">
+								<type>Rust</type>
+								<months>144</months>
+								<miles>0</miles>
+							</warranty>
+						</warranties>
+						<epa_fuel_efficiency>
+							<epa_mpg_record engine_id="200351"
+								transmission_id="230943" fuel_type="Gasoline" fuel_grade="">
+								<city>16</city>
+								<highway>24</highway>
+								<combined>19</combined>
+							</epa_mpg_record>
+						</epa_fuel_efficiency>
+						<epa_green_scores>
+							<epa_green_score_record engine_id="200351" transmission_id="230943" fuel_type="Gasoline" underhood_id="BADXV04.2365" sales_area="FC">
+								<emissions_standard>California LEV-II LEV</emissions_standard>
+								<air_pollution_score>5</air_pollution_score>
+								<greenhouse_gas_score>3</greenhouse_gas_score>
+								<smartway>N</smartway>
+							</epa_green_score_record>
+						</epa_green_scores>
+					</style>
+				</us_styles>
+			</us_market_data>
+			<supplemental_data></supplemental_data>
+		</query_response>
+	</query_responses>
+</decoded_data>

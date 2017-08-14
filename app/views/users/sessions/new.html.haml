@@ -1,0 +1,20 @@
+- resource.email = params[:email] unless resource.email.present?
+
+.auth__form
+  = panel class: 'mT50 opacity08' do
+    .panel-body
+      = render 'authentications/providers', flow: 'login', icons: true, color: true
+
+      - if Authentication.providers.present?
+        .auth__or
+          %hr/
+          %span or
+
+      = simple_form_for resource, as: resource_name, url: session_path(resource_name) do |f|
+        = f.input :login, autofocus: true, required: true, placeholder: 'Email/Username'
+        = f.input :password, required: true do |input|
+          = f.input_field :password, required: true, autocomplete: 'off', placeholder: 'Enter your Password'
+        .form-group
+          = f.button :submit, I18n.t('auth.login.link'), class: 'btn-primary btn-lg btn-block'
+
+      = render 'users/shared/links', disable_signup: true

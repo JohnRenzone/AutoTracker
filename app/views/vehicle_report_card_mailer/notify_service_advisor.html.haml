@@ -1,0 +1,7 @@
+%p{style: "font-size: 15px;"}
+  Hello, #{@vehicle_report_card.service_advisor.display_name}!
+%p{style: "font-size: 15px;"}
+  A Report with VIN #{@vehicle_report_card.vehicle_identification_number} has been submitted by #{@vehicle_report_card.user.role} #{@vehicle_report_card.user.display_name}.
+%p{style: "font-size: 15px;"}
+  = link_to "Click here", vehicle_report_cards_url(@vehicle_report_card.vehicle_identification_number), target: :_blank
+  to view the report

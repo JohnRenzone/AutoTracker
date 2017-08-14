@@ -1,0 +1,19 @@
+.row
+  .col-xs-12
+    %p.text-muted
+      Choose your account and click on login button to proceed.
+.row
+  .col-xs-12.col-sm-6
+    = panel context: 'primary' do
+      .panel-heading
+        %strong
+          = t('users.roles.service_advisor').pluralize
+      .panel-body
+        = render 'users/login_as/users', users: @service_advisors
+  .col-xs-12.col-sm-6
+    = panel context: 'primary' do
+      .panel-heading
+        %strong
+          = t('users.roles.technician').pluralize
+      .panel-body
+        = render 'users/login_as/users', users: @technicians

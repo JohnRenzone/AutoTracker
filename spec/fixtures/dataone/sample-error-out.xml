@@ -1,0 +1,17 @@
+<decoded_data>
+  <decoder_messages>
+    <service_provider>DataOne Software, Inc.</service_provider>
+    <decoder_version>7.0.1</decoder_version>
+    <decoder_errors/>
+  </decoder_messages>
+  <query_responses>
+    <query_response identifier="Request-Sample" transaction_id="T45002902A8989BE7BA686FBF9A22174C98B536A4">
+      <query_error>
+        <error_code>IV</error_code>
+        <error_message>Invalid VIN: Not 17 characters</error_message>
+      </query_error>
+      <us_market_data/>
+      <supplemental_data/>
+    </query_response>
+  </query_responses>
+</decoded_data>

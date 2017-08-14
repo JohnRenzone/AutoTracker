@@ -1,0 +1,12 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10
+      YOUR NEXT MAINTENANCE APPOINTMENT
+.row.pB10
+  .col-md-12.col-xs-12.col-sm-12
+    .form-group
+      = f.text_field :service_description, placeholder: t('activerecord.attributes.next_maintenance_appointment.service_description'), class: 'form-control input-lg'
+.row.pB10
+  .col-md-12.col-xs-12.col-sm-12
+    .form-group
+      = f.text_field :appointment_date, placeholder: t('activerecord.attributes.next_maintenance_appointment.appointment_date'), class: 'form-control input-lg datetimepicker'

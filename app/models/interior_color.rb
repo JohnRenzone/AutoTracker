@@ -1,0 +1,2 @@
+class InteriorColor < Color
+end

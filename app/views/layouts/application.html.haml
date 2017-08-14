@@ -1,0 +1,44 @@
+!!!
+%html.no-js{lang: 'en'}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
+    %title= content_for?(:title) ? yield(:title) : I18n.t('brand.name')
+    %meta{content: (content_for?(:description) ? yield(:description) : I18n.t('brand.name')), name: 'description'}
+    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag "controllers/#{params[:controller]}" if AutoTracker::Application.assets.find_asset("controllers/#{params[:controller]}.css")
+    /[if lt IE 9]
+      = javascript_include_tag 'ie', 'data-turbolinks-track' => true
+    = javascript_include_tag 'head', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag "controllers/#{params[:controller]}" if AutoTracker::Application.assets.find_asset("controllers/#{params[:controller]}.js")
+    = csrf_meta_tags
+    = yield :head
+    = render 'layouts/airbrake'
+  %body{class: "controller__#{controller_name} action__#{action_name}"}
+    = render 'layouts/navigation'
+    .container
+      .row.mB10
+        .col-md-12
+          - if user_signed_in?
+            = link_to "Logged in as #{current_user.role.humanize.downcase} #{content_tag :b, current_user.display_name}".html_safe, edit_user_registration_path, class: 'pull-right text-success'
+      #message.notification-container{:style => "display:none"}
+        .notification-message
+          %span
+            Saving...
+      .errors__container
+        = render 'layouts/messages'
+      .row
+        .col-md-12
+          = render 'layouts/breadcrumb'
+      = yield
+    -#- if user_signed_in?
+    -#  %footer.page__footer
+    -#    - if content_for? :footer
+    -#      = yield :footer
+    -#    - else
+    -#      = render 'layouts/footer'
+    = render 'layouts/analytics'
+    = render 'layouts/javascripts'
+    = render 'layouts/report_card_modal'

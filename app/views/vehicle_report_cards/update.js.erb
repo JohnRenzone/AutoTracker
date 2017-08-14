@@ -1,0 +1,11 @@
+<% if @vehicle_report_card.errors.any? %>
+  $('#vin-dataone-info').fadeOut("slow");
+  <% @vehicle_report_card.errors.full_messages.each do |message| %>
+    var n = noty({
+                    layout: 'topRight',
+                    type: 'error',
+                    text: '<%= message %>',
+                    timeout: 5000
+                });
+  <% end %>
+<% end %>

@@ -1,0 +1,8 @@
+= link_to new_vehicle_report_card_path do
+  %h3= 'New Report'
+%br
+= link_to vehicle_report_cards_path do
+  %h3= t('vehicle_report_card.previous')
+%br
+= link_to destroy_user_session_path, rel: :nofollow do
+  %h3= I18n.t('auth.logout.link')

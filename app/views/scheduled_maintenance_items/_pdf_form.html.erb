@@ -1,0 +1,117 @@
+<%= f.fields_for :scheduled_maintenance_item do |_f| %>
+    <table width="100%" border="1" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+        <td colspan="5" class="headCell">SCHEDULED MAINTENANCE ITEMS DUE*</td>
+      </tr>
+      <tr>
+        <td class="subheadcell">&nbsp;Due</td>
+        <td class="subheadcell">&nbsp;Serviced</td>
+        <td>&nbsp;</td>
+        <td class="subheadcell">&nbsp;Due</td>
+        <td class="subheadcell">&nbsp;Serviced</td>
+      </tr>
+      <tr>
+        <td>
+        <td class="centertd">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <%= pdf_grey_checkbox(_f, :engine_air_filter) %>
+          <p>Engine Air Filter </p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :engine_air_filter_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= pdf_grey_checkbox(_f, :oil_changes) %>
+          <p>Oil change & filter</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :oil_changes_serviced) %>
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <%= pdf_grey_checkbox(_f, :engine_coolant_filter) %>
+          <p>Engine Coolent</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :engine_coolant_filter_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= pdf_grey_checkbox(_f, :tire_rotation) %>
+          <p>Tire Rotation - n/a in QC'</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :tire_rotation_serviced) %>
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <%= pdf_grey_checkbox(_f, :transmission_fluid_filter) %>
+          <p>Transmission Fluid &/or Filter</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :transmission_fluid_filter_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= pdf_grey_checkbox(_f, :multipoint_inspection) %>
+          <p>Multi-Point Inspection</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :multipoint_inspection_serviced) %>
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <%= pdf_grey_checkbox(_f, :cabin_air_filter) %>
+          <p> Cabin Air Filter</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :cabin_air_filter_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= pdf_grey_checkbox(_f, :fuel_filter) %>
+          <p>Fuel Filter</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :fuel_filter_serviced) %>
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <%= pdf_grey_checkbox(_f, :spark_plugs) %>
+          <p>Spark Plugs</p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :spark_plugs_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <input type="checkbox" class="css-checkboxGrey" name="A82" id="A82"/><label for="A82" class="css-labelGrey"></label>
+          <input class="inputUnderline" id="km">
+          <p> Km Scheduled Maintenance</p></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="4"><p>*This is only a partial list of vechile maintenance items and is NOT all-inclusive.
+          Please consul your Owner's Manual for Vehile-specific maintenance requirements.</p></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="headCell">FLUID LEVELS</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+        <td class="centertd">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+<% end %>

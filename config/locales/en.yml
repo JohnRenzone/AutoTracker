@@ -1,0 +1,219 @@
+en:
+  brand:
+    name: 'AutoTracker'
+    prolong_name: 'AutoTracker'
+
+  emails:
+    welcome:
+      subject: 'Welcome to AutoTracker'
+  legend:
+    g: 'Checked and OK at this time.'
+    y: 'Requires future attention.'
+    r: 'Requires immediate attention.'
+  auth:
+    login:
+      title: 'Please Log In'
+      link: 'Log In'
+      link_with: 'Log In with %{provider}'
+    signup:
+      title: 'Sign Up'
+      link: 'Sign Up'
+      help: 'Already registered? %{login_link}'
+      email_taken: 'An account with your email already exists. %{login_link}'
+    logout:
+      link: 'Logout'
+    forgot:
+      link: 'I forgot my password'
+      prompt: 'Forgot password?'
+      submit: 'Send forgot password instructions'
+    reset:
+      link: 'Change your password'
+      submit: 'Reset Password'
+      invalid_title: 'Unable to reset password'
+      invalid_message: 'Your account token expired. To protect your security, please resend password instructions and try again.'
+    confirm:
+      link: 'I need to confirm my account'
+      submit: 'Resend confirmation instructions'
+    unlock:
+      link: 'My account is locked'
+      submit: 'Resend unlock instructions'
+    links:
+      title: 'Account Help'
+    edit:
+      link: 'Social'
+    destroy:
+      link: 'Disconnect'
+      prompt: 'Disconnect this social account?'
+      tooltip: 'Disconnect social account and remove related data'
+      warning: ''
+      notice: 'Your social account will be disconnected form your AutoTracker account. You can reconnect the social account at any time.'
+      submit: 'Yes, disconnect the account'
+      cancel: 'Cancel'
+    reconnect:
+      link: 'Update'
+      tooltip: 'Update your social data'
+
+  account:
+    edit:
+      link: 'My Account'
+    destroy:
+      link: 'Delete my account'
+      prompt: 'Delete your account?'
+      warning: 'Your account will be permanently deleted. This cannot be undone.'
+      notice: ''
+      submit: 'Yes, delete my account'
+      cancel: 'Cancel'
+
+  accounts:
+    connected: 'Success! Your social account is now connected.'
+    updated: 'Success! Your social account is up-to-date.'
+    edit:
+      link: 'Social'
+
+  # See rails_admin locale file for more settings
+  admin:
+    link: 'Admin'           # Name of admin link in application drop down menu
+    home:
+      name: 'Application'   # Name of link back to app in admin dashboard
+    dashboard:
+      name: 'Admin'         # Title of admin dashboard on the left
+
+  errors:
+    unknown: 'Oops! Something went wrong. Please try again.'
+
+  unauthorized:
+    default: 'Sorry, you are not authorized to access the requested page.'
+  vehicle_report_card:
+    previous: 'Previous Reports'
+  activerecord:
+    models:
+      vehicle_report_card: "Report"
+    attributes:
+      vehicle_report_card:
+        report_card_date: "Date"
+        vehicle_identification_number: "VIN"
+        odometer: "Odometer"
+        service_advisor_id: "Service Advisor"
+        technician_id: "Technician"
+        comments: "Comments"
+        customer_email: "Customer Email"
+      battery:
+        battery_condition_legend: 'Battery Condition'
+        factory_spec_amps: 'Factory Spec cold cranking amps'
+        actual_amps: 'Actual cold cranking amps'
+      scheduled_maintenance_item:
+        tire_rotation: 'Tire Rotation - n/a in QC'
+        multipoint_inspection: 'Multi-Point Inspection'
+        transmission_fluid_filter: 'Transmission Fluid &/or Filter'
+      vehicle_component:
+        light_legend: 'Operation of horn,interior lights, exterior lamps,turn signals,hazard & brake lamps'
+        windshield_legend: 'Windshield for cracks,chips & pitting'
+        hvac_system_hoses_legend: 'HVAC system & hoses/lines for leaks/damage'
+        engine_cooling_legend: 'Engine cooling system,raditor,hoses & clamps'
+        accessory_drive_belts_legend: 'Accessory drive belt(s)'
+        brake_system_legend: 'Brake system(including lines,hoses,parking brake)'
+        suspension_legend: 'Shocks/struts/ other suspension components for leaks or damage'
+        steering_legend: 'Steering, steering linkages & ball joints'
+        exhaust_system_legend: 'Exhaust system (leaks, damage, loose parts)'
+        clutch_legend: 'Clutch operations (if required)'
+        constant_velocity_legend: 'Constant Velocity drive axle boots'
+        drive_shaft_legend: 'Drive shaft,transmission,u-joint & shift linkage & lubricate'
+      tire_wear_indicate:
+        left_front_tread_depth: 'Depth'
+        right_front_tread_depth: 'Depth'
+        left_rear_tread_depth: 'Depth'
+        right_rear_tread_depth: 'Depth'
+        left_front_tread_depth_legend: 'Tire Thread'
+        right_front_tread_depth_legend: 'Tire Thread'
+        left_rear_tread_depth_legend: 'Tire Thread'
+        right_rear_tread_depth_legend: 'Tire Thread'
+        left_front_psi_legend: 'Tire PSI'
+        right_front_psi_legend: 'Tire PSI'
+        left_rear_psi_legend: 'Tire PSI'
+        right_rear_psi_legend: 'Tire PSI'
+        left_front_pattern_legend: 'Wear Pattern'
+        right_front_pattern_legend: 'Wear Pattern'
+        left_rear_pattern_legend: 'Wear Pattern'
+        right_rear_pattern_legend: 'Wear Pattern'
+      brake_wear_indicate:
+        left_front_legend: 'Break Lining'
+        right_front_legend: 'Break Lining'
+        left_rear_legend: 'Break Lining'
+        right_rear_legend: 'Break Lining'
+        left_front_brake_lining: 'Lining'
+        right_front_brake_lining: 'Lining'
+        left_rear_brake_lining: 'Lining'
+        right_rear_brake_lining: 'Lining'
+      next_maintenance_appointment:
+        service_description: 'Service Description'
+        appointment_date: 'Appointment Date'
+        price: 'Price'
+        appointment_time: 'Appointment Time'
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: 'is used by another account'
+  serviced: 'SERV.'
+  due: 'DUE'
+  helpers:
+    submit:
+      user:
+        # Submit button used by simple_form in users/registrations#edit
+        update: 'Update Account'
+        create: 'Sign Up'
+
+  simple_form:
+    # Collections: selects, radios
+    'yes': 'Yes'
+    'no': 'No'
+
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+
+    placeholders:
+      user:
+        email: 'you@example.com'
+        password: 'password'
+
+    labels:
+      user:
+        edit:
+          password: 'New password'
+
+    hints:
+      user:
+        edit:
+          password: 'Leave blank unless updating password'
+  time:
+    formats:
+      short: "%m/%d/%Y %H:%M %P"
+      date_only: "%m/%d/%Y"
+    # Labels and hints examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+
+  users:
+    roles:
+      admin: 'Admin'
+      dealer: 'Dealer'
+      service_advisor: 'Service Advisor'
+      technician: 'Technician'
+

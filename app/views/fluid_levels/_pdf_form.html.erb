@@ -1,0 +1,51 @@
+<%= f.fields_for :fluid_level do |_f| %>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+  <tr>
+  <% (1...3).each do |element| %>
+    <td class="subheadcell">OK </td>
+    <td class="subheadcell">FILL</td>
+    <td>&nbsp;</td>
+  <% end %>
+  </tr>
+  <tr>
+    <% [:engine_oil,:power_steering, :transmission].each do |column| %>
+        <td>
+          <% if @vehicle_report_card.fluid_level[column] == "1" %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3" checked /><label for="OF3" class="css-labelGrey"></label>
+          <% else %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3"  /><label for="OF3" class="css-labelGrey"></label>
+          <% end %>
+        </td>
+        <td>
+          <% if @vehicle_report_card.fluid_level[column] == "2" %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3" checked /><label for="OF3" class="css-labelGrey"></label>
+          <% else %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3"  /><label for="OF3" class="css-labelGrey"></label>
+          <% end %>
+        </td>
+        <td><p><%= _f.label column %></p></td>
+    <% end %>
+  </tr>
+  <tr>
+    <% [:brake_reservoir,:window_washer, :coolent_recovery_reservoir].each do |column| %>
+        <td>
+          <% if @vehicle_report_card.fluid_level[column] == "1" %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3" checked /><label for="OF3" class="css-labelGrey"></label>
+          <% else %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3"  /><label for="OF3" class="css-labelGrey"></label>
+          <% end %>
+        </td>
+        <td>
+          <% if @vehicle_report_card.fluid_level[column] == "2" %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3" checked /><label for="OF3" class="css-labelGrey"></label>
+          <% else %>
+              <input type="checkbox" class="css-checkboxGrey" name="OF3" id="OF3"  /><label for="OF3" class="css-labelGrey"></label>
+          <% end %>
+        </td>
+        <td><p><%= _f.label column %></p></td>
+    <% end %>
+  </tr>
+  </tbody>
+  </table>
+<% end %>

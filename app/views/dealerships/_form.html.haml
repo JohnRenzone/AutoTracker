@@ -1,0 +1,12 @@
+= form_for(@dealership) do |f|
+  .form-group
+    = render 'application/active_record_errors', object: @dealership
+  .form-group
+    = f.label :title
+    = f.text_field :title, placeholder: 'eg: Ford Edmonton', class: 'form-control'
+  .form-group
+    = f.label :address
+    = f.text_area :address, placeholder: 'eg: Edmonton, Alberta, Canada', class: 'form-control'
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary btn-lg'
+    = link_to 'cancel', dealerships_path, class: 'btn btn-default btn-lg mL10'

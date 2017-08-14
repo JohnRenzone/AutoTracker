@@ -1,0 +1,21 @@
+.row.pB10
+  .col-md-12
+    .form-group
+      .input-group
+        = f.number_field "#{side}_brake_lining".to_sym, placeholder: t("activerecord.attributes.brake_wear_indicate.#{side}_brake_lining"), class: 'form-control input-lg',step: 'any'
+        %span.input-group-btn
+          %button.btn.btn-default.btn-lg{:type => "button"} mm
+.row.pB10
+  .col-md-offset-10.col-sm-offset-10.col-xs-offset-10.col-md-2.col-xs-2.col-sm-2.serv-label-one
+    %strong.text-muted= t('serviced')
+.row.xs-border
+  .col-md-5.col-xs-7.col-sm-5.full-box
+    .form-group
+      = legend("#{side}_legend".to_sym, f)
+  .col-md-5.col-xs-9.col-sm-5
+    = f.label "#{side}_legend".to_sym
+  .serv-label-two
+    %strong.text-muted= t('serviced')
+  .col-md-2.col-xs-3.col-sm-2.text-center
+    .form-group
+      = check_box_block f, "#{side}_serviced".to_sym

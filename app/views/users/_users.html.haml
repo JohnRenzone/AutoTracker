@@ -1,0 +1,19 @@
+- if users.present?
+  .table-responsive
+    %table.table.table-striped.table-hover.table-bordered
+      %thead
+        %tr
+          %th Email
+          %th Username
+          %th Role
+          %th Dealership
+          %th{width: '20%'} Created At
+          %th{width: '15%'}
+
+      %tbody
+        = render users
+  = paginate users
+- else
+  .row
+    .col-md-12.text-center
+      Nothing to display

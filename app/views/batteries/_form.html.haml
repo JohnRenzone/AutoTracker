@@ -1,0 +1,23 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 BATTERY
+  .row.pB10
+    .col-md-offset-10.col-sm-offset-10.col-xs-offset-10.col-md-2.col-xs-2.col-sm-2.serv-label-one
+      %strong.text-muted= t('serviced')
+  .row.xs-border{style: 'border: none'}
+    .col-md-5.col-xs-7.col-sm-5.full-box
+      .form-group
+        = legend(:battery_condition_legend, f)
+    .col-md-5.col-xs-9.col-sm-5
+      = f.label :battery_condition_legend
+    .serv-label-two
+      %strong.text-muted= t('serviced')
+    .col-md-2.col-xs-3.col-sm-2.text-center
+      .form-group
+        = check_box_block f, :battery_serviced
+  .form-group
+    .w100p
+      = f.number_field :factory_spec_amps,placeholder: t('activerecord.attributes.battery.factory_spec_amps'), class: 'form-control input-lg', step: 'any'
+  .form-group
+    .w100p
+      = f.number_field :actual_amps, placeholder: t('activerecord.attributes.battery.actual_amps'), class: 'form-control input-lg', step: 'any'

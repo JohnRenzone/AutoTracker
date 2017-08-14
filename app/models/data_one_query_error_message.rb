@@ -1,0 +1,3 @@
+class DataOneQueryErrorMessage < DataOneErrorMessage
+
+end

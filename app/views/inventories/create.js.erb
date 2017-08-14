@@ -1,0 +1,7 @@
+<% if @inventory && !@inventory.new_record? && @inventory.errors.empty? %>
+  $('#vin-dataone-info').html("<%= j render(@inventory) %>").fadeIn("show");
+  console.log('====> Sucessfully decoded VIN <%= @inventory.vin %>');
+<% else %>
+  $('#vin-dataone-info').html("");
+  console.log('====> <%= j @inventory.errors.full_messages.join(', ')%>');
+<% end %>

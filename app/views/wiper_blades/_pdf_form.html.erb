@@ -1,0 +1,21 @@
+<%= f.fields_for :wiper_blade do |_f| %>
+  <table width="100%" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td colspan="4" class="headCell">WIPER BLADES </td>
+        <td class="centertd subheadcell">SERV</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <%= pdf_legend(_f, :wiper_blade_legend, 'g')%>
+          <%= pdf_legend(_f, :wiper_blade_legend, 'y')%>
+          <%= pdf_legend(_f, :wiper_blade_legend, 'r')%>
+          <p>Wiper Test Performed </p>
+        </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :wiper_blade_serviced) %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>

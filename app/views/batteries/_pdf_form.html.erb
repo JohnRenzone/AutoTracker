@@ -1,0 +1,32 @@
+<%= f.fields_for :battery do |_f| %>
+    <table width="100%" border="1" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+        <td colspan="4" class="headCell"><p>BATTERY</p></td>
+        <td class="centertd subheadcell">SERV</td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :battery_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"> state of Health %</td>
+        <td><p>Battery Condition</p>
+          <%= pdf_legend(_f, :battery_condition_legend, 'g') %>
+          <%= pdf_legend(_f, :battery_condition_legend, 'y') %>
+          <%= pdf_legend(_f, :battery_condition_legend, 'r') %>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="5"><p>Factory spec cold cranking amps: &nbsp;</p>
+          <input class="inputUnderline" id="Factory" style="width:50px" value=<%= @vehicle_report_card.battery[:factory_spec_amps] %>>
+          <p> Actual cold Cranking amps: &nbsp;</p>
+          <input class="inputUnderline" id="fac" style="width:50px" value=<%= @vehicle_report_card.battery[:actual_amps] %>>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+<% end %>

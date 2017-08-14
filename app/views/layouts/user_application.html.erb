@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    <%= content_for?(:title) ? yield(:title) : I18n.t('brand.name') %>
+  </title>
+  <meta content="<%= content_for?(:description) ? yield(:description) : "Autotracker" %>" name="description"/>
+  <%= stylesheet_link_tag 'sidebar', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'vehicle_report_cards', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= stylesheet_link_tag 'bootstrap-toggle.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+
+  <%= javascript_include_tag 'head', 'data-turbolinks-track' => true %>
+  <%#= headjs_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!--[if lt IE 9]
+    <%= javascript_include_tag 'ie', 'data-turbolinks-track' => true %>
+  -->
+  <%#= javascript_include_tag 'bootstrap-toggle.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<!--<body class="controller__<%#= controller_name %> action__<%#= action_name %>">-->
+<body>
+  <%= yield :head %>
+  <%= render 'layouts/airbrake' %>
+
+  <%= render 'layouts/navigation' %>
+
+  <div id="wrapper">
+    <%= render 'layouts/sidebar' %>
+    <div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <img src="http://www.fenero.com/wp-content/uploads/2014/12/images/menu-button.png"></img>
+
+      </button>
+      <div class="container">
+        <div class="row">
+          <div class="errors__container">
+            <%= render 'layouts/messages' %>
+          </div>
+        <%#= render 'layouts/breadcrumb' %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render 'layouts/analytics' %>
+  <%= render 'layouts/javascripts' %>
+</body>
+</html>

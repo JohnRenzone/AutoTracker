@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decoder_query>
+	<decoder_settings>
+		<version>7.0.1</version>
+		<display>full</display>
+		<styles>on</styles>
+		<style_data_packs>
+			<basic_data>on</basic_data>
+			<pricing>on</pricing>
+			<engines>on</engines>
+			<transmissions>on</transmissions>
+			<specifications>on</specifications>
+			<installed_equipment>on</installed_equipment>
+			<optional_equipment>on</optional_equipment>
+			<colors>on</colors>
+			<warranties>on</warranties>
+			<fuel_efficiency>on</fuel_efficiency>
+		</style_data_packs>
+		<common_data>on</common_data>
+		<common_data_packs>
+			<basic_data>on</basic_data>
+			<pricing>on</pricing>
+			<engines>on</engines>
+			<transmissions>on</transmissions>
+			<specifications>on</specifications>
+			<installed_equipment>on</installed_equipment>
+		</common_data_packs>
+	</decoder_settings>
+	<query_requests>
+		<query_request identifier="WAUBVAFB4BN123456">
+			<vin>WAUBVAFB4BN123456</vin>
+			<year />
+			<make />
+			<model />
+			<trim />
+			<model_number />
+			<package_code />
+			<drive_type />
+			<vehicle_type />
+			<body_type />
+			<doors />
+			<bedlength />
+			<wheelbase />
+			<msrp />
+			<invoice_price />
+			<engine description="">
+				<block_type />
+				<cylinders />
+				<displacement />
+				<fuel_type />
+			</engine>
+			<transmission description="">
+				<trans_type />
+				<trans_speeds />
+			</transmission>
+			<optional_equipment_codes />
+			<installed_equipment_descriptions />
+			<interior_color description="">
+				<color_code />
+			</interior_color>
+			<exterior_color description="">
+				<color_code />
+			</exterior_color>
+		</query_request>
+	</query_requests>
+</decoder_query>

@@ -1,0 +1,11 @@
+- if object.errors.any?
+  .row
+    .col-md-12
+      = panel context: 'danger' do
+        .panel-heading
+          = pluralize(object.errors.count, "error")
+          prohibited this Report from being saved:
+        .panel-body
+          %ul
+            - object.errors.full_messages.each do |message|
+              %li= message

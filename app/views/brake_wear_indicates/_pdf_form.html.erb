@@ -1,0 +1,81 @@
+<%= f.fields_for :brake_wear_indicate do |_f| %>
+    <table width="100%"  style="height: 100%;"  border="1" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+        <td colspan="5" class="headcell2"> BRAKE WEAR INDICATES</td>
+      </tr>
+      <tr>
+        <td colspan="5"><input type="checkbox" class="css-checkboxGrey"  name="A41" id="A41"/><label  for="A41" class="css-labelGrey"></label>
+          <p> Actual cold Cranking amps: </p></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="headcell2">LEFT FRONT</td>
+        <td colspan="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+        <td class="subheadcell">SERV</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <%= pdf_legend(_f, :left_front_legend, 'g')%>
+          <%= pdf_legend(_f, :left_front_legend, 'y')%>
+          <%= pdf_legend(_f, :left_front_legend, 'r')%>
+          <p>Break Lining:</p>
+          <input class="inputUnderline"  id="break1"  style="width:50px" value= <%= @vehicle_report_card.brake_wear_indicate[:left_front_brake_lining] %>>
+          <p>mm</p></td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :left_front_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="headcell2">LEFT REAR</td>
+        <td colspan="1">&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <%= pdf_legend(_f, :left_rear_legend, 'g')%>
+          <%= pdf_legend(_f, :left_rear_legend, 'y')%>
+          <%= pdf_legend(_f, :left_rear_legend, 'r')%>
+          <p>Break Lining:</p>
+          <input class="inputUnderline"  id="break2"  style="width:50px" value= <%= @vehicle_report_card.brake_wear_indicate[:left_rear_brake_lining] %>>
+          <p>mm </p></td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :left_rear_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="headcell2">RIGHT FRONT</td>
+        <td colspan="1">&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <%= pdf_legend(_f, :right_front_legend, 'g')%>
+          <%= pdf_legend(_f, :right_front_legend, 'y')%>
+          <%= pdf_legend(_f, :right_front_legend, 'r')%>
+          <p> Break Lining:</p>
+          <input class="inputUnderline"  id="break3"  style="width:50px" value= <%= @vehicle_report_card.brake_wear_indicate[:right_front_brake_lining] %>>
+          <p>mm </p></td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :right_front_serviced) %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="headcell2">RIGHT REAR</td>
+        <td colspan="1">&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <%= pdf_legend(_f, :right_rear_legend, 'g')%>
+          <%= pdf_legend(_f, :right_rear_legend, 'y')%>
+          <%= pdf_legend(_f, :right_rear_legend, 'r')%>
+          <p>Break Lining:</p>
+          <input class="inputUnderline"  id="break4"  style="width:50px" value= <%= @vehicle_report_card.brake_wear_indicate[:right_rear_brake_lining] %>>
+          <p>mm</p> </td>
+        <td class="centertd">
+          <%= pdf_checkbox(_f, :right_rear_serviced) %>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+<% end %>

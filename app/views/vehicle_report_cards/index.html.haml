@@ -1,0 +1,62 @@
+- if can? :create, VehicleReportCard
+  .row.mB20
+    .col-md-12
+      = link_to 'New Report', new_vehicle_report_card_path, class: 'btn btn-primary btn-lg pull-right'
+- if @vehicle_report_cards.present?
+  = panel do
+    .panel-heading
+      %strong Search
+    .panel-body
+      .row
+        .col-md-12
+          = form_tag(vehicle_report_cards_path, method: :get, class: 'form-inline') do
+            .form-group
+              %label{:for => "user"} User:
+              = text_field_tag :user, params[:user], class: 'form-control', placeholder: 'Name / E-mail / Username'
+            .form-group
+              %label{:for => "vin"}
+                #{t('activerecord.attributes.vehicle_report_card.vehicle_identification_number')}:
+              = text_field_tag :vin, params[:vin], class: 'form-control', placeholder: 'eg: 1FTRF02W24KXXXXXX'
+            %button.btn.btn-default{:type => "submit"}
+              %i.fa.fa-search
+              Search
+
+  .table-responsive
+    %table.table.table-striped.table-hover.table-bordered
+      %thead
+        %tr
+          %th{width: '20%'}
+            = link_to vehicle_report_cards_path({order: toggle_order(:vehicle_identification_number)}.merge(vin: params[:vin], user: params[:user])) do
+              = t('activerecord.attributes.vehicle_report_card.vehicle_identification_number')
+              %i.fa.fa-sort
+          %th{width: '20%'}
+            = link_to vehicle_report_cards_path({order: toggle_order(:report_card_date)}.merge(vin: params[:vin], user: params[:user])) do
+              = t('activerecord.attributes.vehicle_report_card.report_card_date')
+              %i.fa.fa-sort
+          %th{width: '20%'}
+            Status
+          %th{width: '30%'}
+            User
+          %th{width: '10%'}
+      %tbody
+        - @vehicle_report_cards.each do |vehicle_report_card|
+          %tr
+            %td= link_to vehicle_report_card.vehicle_identification_number, edit_vehicle_report_card_path(vehicle_report_card)
+            %td= vehicle_report_card.report_card_date.present? ? l(vehicle_report_card.report_card_date, format: :short) : '-'
+            %td
+              %span{class: "label #{vehicle_report_card.aasm_state_label_css_class}"}
+                = vehicle_report_card.aasm_state.humanize
+            %td= vehicle_report_card.user.name_or_email_or_username
+            %td
+              - if can? :destroy, @vehicle_report_card
+                = link_to vehicle_report_card, class: 'btn btn-default btn-xs mR5', method: :delete, data: {confirm: 'Are you sure?', title: 'Delete', toggle: 'tooltip'}  do
+                  %i.fa.fa-trash
+              &nbsp;
+              = link_to vehicle_report_card_path(vehicle_report_card), class: 'btn btn-default btn-xs mR5', data: {toggle: 'tooltip', title: 'Download PDF'} do
+                %i.fa.fa-file-pdf-o
+- else
+  .row.pA50
+    .col-md-12.text-center.mT50
+      Nothing to display.
+.pagination
+  = paginate @vehicle_report_cards

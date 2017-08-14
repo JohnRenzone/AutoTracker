@@ -1,0 +1,11 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 BRAKE WEAR INDICATES
+.row
+  - ['left_front', 'left_rear', 'right_front', 'right_rear'].each do |side|
+    .col-md-6.col-xs-12.col-sm-12
+      .row
+        .col-md-12.grey-bar
+          %h5
+            = side.humanize.upcase
+        = render 'brake_wear_indicates/brake', {side: side, f: f}

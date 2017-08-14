@@ -1,0 +1,9 @@
+%tr
+  %td= user.email.presence || '-'
+  %td= user.username.presence || '-'
+  %td= user.role.presence || '-'
+  %td= user.dealership.try(&:title) || '-'
+  %td= l(user.created_at, format: :short)
+  %td
+    = link_to 'Edit', edit_user_path(user), class: 'btn btn-default btn-xs'
+    = link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs'

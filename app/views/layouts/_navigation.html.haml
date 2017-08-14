@@ -1,0 +1,35 @@
+%nav.navbar.navbar-default.navbar-fixed-top{role: 'navigation'}
+  .navbar-header
+    %button.navbar-toggle{type: 'button', data: {toggle: 'collapse', target: '.navbar-collapse'}}
+      %span.sr-only
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    = link_to image_tag('logo/autotracker.png'), root_path, class: 'navbar-brand'
+  .collapse.navbar-collapse
+    %ul.nav.navbar-nav.navbar-right
+      - if user_signed_in?
+        - if current_user.admin? or current_user.dealer?
+          %li
+            = link_to 'Invite', new_user_invitation_path
+        - if can? :create, VehicleReportCard
+          %li= link_to 'New Report', new_vehicle_report_card_path
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            More
+            %span.caret
+          %ul.dropdown-menu
+            - if can? :read, VehicleReportCard
+              %li
+                =link_to 'Reports', vehicle_report_cards_path
+            - if can? :crud, Dealership
+              %li
+                =link_to 'Manage Dealerships', dealerships_path
+            - if can? :crud, User
+              %li
+                =link_to 'Manage Users', users_path
+            %li.divider{:role => "separator"}
+            %li= link_to I18n.t('account.edit.link'), edit_user_registration_path
+            %li= link_to I18n.t('auth.logout.link'), destroy_user_session_path, rel: :nofollow
+      - else
+        %li= link_to I18n.t('auth.login.link'), new_user_session_path

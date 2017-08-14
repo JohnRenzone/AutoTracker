@@ -1,0 +1,26 @@
+<%= f.fields_for :vehicle_component do |_f| %>
+  <table width="100%" border="1"  style="height: 100%;margin-top:185px;" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+        <td colspan="5" class="headCell"> SYSTEMS / COMPONENTS</td>
+      </tr>
+      <% VehicleComponent::ITEMS.each_pair do |key, items| %>
+          <tr>
+            <td colspan="4"  class="headcell3"><%= _f.label key %></td>
+            <td class="centertd">SERV</td>
+          </tr>
+          <% items.each do |item| %>
+              <tr>
+                <td> <%= pdf_legend(_f, item[0], 'g')%> </td>
+                <td> <%= pdf_legend(_f, item[0], 'y')%> </td>
+                <td> <%= pdf_legend(_f, item[0], 'r')%> </td>
+                <td ><p><%= _f.label item[0] %></p></td>
+                <td class="centertd" >
+                  <%= pdf_checkbox(_f, item[1]) %>
+                </td>
+              </tr>
+          <% end %>
+      <% end %>
+      </tbody>
+  </table>
+<% end %>

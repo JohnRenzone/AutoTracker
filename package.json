@@ -1,0 +1,29 @@
+{
+  "name": "AutoTracker",
+  "version": "1.0.0",
+  "description": "It's all about AutoTracker",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheBauhub/autotracker.git"
+  },
+  "keywords": [
+    "education"
+  ],
+  "author": "Sukeerthi Adiga G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBauhub/autotracker/issues"
+  },
+  "homepage": "https://autotracker-production.herokuapp.com",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}

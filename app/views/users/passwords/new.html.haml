@@ -1,0 +1,9 @@
+.auth__form
+  = panel class: 'opacity08 mT50' do
+    .panel-body
+      = simple_form_for resource, as: resource_name, url: password_path(resource_name), method: :post do |f|
+        = f.input :email, autofocus: true, required: true
+        .form-group
+          = f.button :submit, I18n.t('auth.forgot.submit'), class: 'btn-primary btn-block btn-lg'
+
+      = render "users/shared/links"

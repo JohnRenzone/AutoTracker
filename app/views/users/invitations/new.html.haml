@@ -1,0 +1,16 @@
+= panel do
+  .panel-body
+    = form_for resource, as: resource_name, url: invitation_path(resource_name), html: { method: :post} do |f|
+      .form-group
+        = render 'application/active_record_errors', object: resource
+      - resource.class.invite_key_fields.each do |field|
+        .form-group
+          = f.label field
+          = f.text_field field, placeholder: 'eg: jhon@example.com', class: 'form-control'
+      .form-group
+        = f.label :role
+        = f.select :role, current_user.invitable_roles, {prompt: true}, class: 'form-control'
+      = render 'application/dealership_field', f: f
+      .form-group
+        = f.button t("devise.invitations.new.submit_button") , class: 'btn btn-primary btn-lg'
+        = link_to 'Cancel', root_path, class: 'btn btn-default btn-lg'

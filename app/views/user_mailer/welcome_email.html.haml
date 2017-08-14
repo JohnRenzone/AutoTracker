@@ -1,0 +1,19 @@
+- content_for :title do
+  Welcome #{@user.display_name}!
+
+- content_for :lead do
+  Thanks for signing up to
+  = succeed '.' do
+    = link_to I18n.t('brand.name'), root_url
+
+- content_for :callout do
+  %p
+    We're calling you out to pay attention to what we're saying here.
+
+- content_for :action_button do
+  = link_to 'Get Active', root_url
+
+
+%h3
+  = I18n.t('brand.prolong_name')
+%p Is an online destination for dealers & techinicians to manage vehicle services.

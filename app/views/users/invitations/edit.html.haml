@@ -1,0 +1,10 @@
+= panel class: 'mT50' do
+  .panel-heading
+    %h2= t 'devise.invitations.edit.header'
+  .panel-body
+    = simple_form_for resource, as: resource_name, url: invitation_path(resource_name), html: { method: :put } do |f|
+      = render 'application/active_record_errors', object: resource
+      = f.hidden_field :invitation_token
+      = f.input :password, placeholder: 'password', hint: false
+      = f.input :password_confirmation, placeholder: 'password'
+      = f.button :submit, t("devise.invitations.edit.submit_button"), class: 'btn-primary'

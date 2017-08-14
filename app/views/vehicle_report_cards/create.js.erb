@@ -1,0 +1,25 @@
+<% if @vehicle_report_card.save %>
+  $('form[name="report_card"]').attr('action', '/reports/<%= @vehicle_report_card.id %>');
+  $('form[name="report_card"]').attr('id','edit_vehicle_report_card_<%= @vehicle_report_card.id %>');
+
+  $('#record_type').val("edit")
+  $('#record_id').val('<%= @vehicle_report_card.id %>')
+
+  $('<input>').attr({
+      type: 'hidden',
+      value: 'patch',
+      name: '_method'
+  }).appendTo('form[name="report_card"]');
+
+<% elsif @vehicle_report_card.errors.any? %>
+
+  <% @vehicle_report_card.errors.full_messages.each do |message| %>
+    var n = noty({
+                    layout: 'topRight',
+                    type: 'error',
+                    text: '<%= message %>',
+                    timeout: 5000
+                });
+  <% end %>
+
+<% end %>

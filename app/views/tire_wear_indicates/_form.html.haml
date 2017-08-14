@@ -1,0 +1,34 @@
+.row
+  .col-md-12.blue-bar
+    %h4.pA10 TIRES
+.row.pB10
+  .col-md-6
+    .col-md-offset-10.col-sm-offset-10.col-xs-offset-10.col-md-2.col-xs-2.col-sm-2
+      %strong.text-muted= t('serviced')
+.row.pB10
+  .col-md-6.xs_padding_01500
+    .col-md-2.col-xs-2.col-sm-2.mB10.xs_padding_0
+      .form-group
+        = check_box_block f, :alignment_check_needed
+    .col-md-8.col-xs-8.col-sm-8.mB10
+      = f.label :alignment_check_needed, class: 'mL10'
+    .col-md-2.col-xs-2.col-sm-2
+      = check_box_block f, :alignment_check_serviced
+.row.pB10
+  .col-md-6.xs_padding_01500
+    .col-md-2.col-xs-2.col-sm-2.mB10.xs_padding_0
+      .form-group
+        = check_box_block f, :wheel_balance_needed
+    .col-md-8.col-xs-8.col-sm-8.mB10
+      = f.label :wheel_balance_needed, class: 'mL10'
+    .col-md-2.col-xs-2.col-sm-2.text-center
+      .form-group
+        = check_box_block f, :wheel_balance_serviced
+.row
+  - ['left_front', 'left_rear', 'right_front', 'right_rear'].each do |side|
+    .col-md-6.col-xs-12.col-sm-12
+      .row
+        .col-md-12.grey-bar
+          %h5
+            = side.humanize.upcase
+        = render 'tire_wear_indicates/tire', {tire: side, f: f}

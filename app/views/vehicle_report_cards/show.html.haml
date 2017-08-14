@@ -1,0 +1,192 @@
+= form_for @vehicle_report_card do |f|
+  %table#Table_01{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+    %tr
+      %td{:colspan => "3"}
+        %h1.Vehicle_Report_card Vehicle Report card
+      %td{:colspan => "6", :style => "text-align:right"}= wicked_pdf_image_tag 'pdf/ford-logo.png'
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "45"
+    %tr
+      %td.headCell{:colspan => "9"} MULTI-POiNT INSPECTION AS RECOMMENDED BY FORD MOTOR COMPANY
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "21"
+    %tr
+      %td{:colspan => "9"}
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1024", height: "14"
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "14"
+    %tr
+      %td
+        %p Date:
+        %input#date.inputUnderline{:value => @vehicle_report_card.report_card_date}
+      %td{:colspan => "2"}
+        %p RO#:
+        %input#nameIs.inputUnderline/
+      %td{:colspan => "6"}
+        %p LEGEND
+        %p May contribute to vehicle efficiency and promote a greener environment
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "29"
+    %tr
+      %td{:colspan => "3"}
+        %p Name:
+        %input#name.inputUnderline{:style => "width: 87%;"}/
+      %td{:colspan => "6"}
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+          %tbody
+            %tr
+              %td  
+              %td
+                %input#A.css-checkboxgreen{:checked => "checked", :name => "A", :type => "checkbox"}/
+                %label.css-labelgreen{:for => "A"}
+              %td{:colspan => "2"}
+                %p Checked and Ok at this time
+              %td
+                %input#B.css-checkbox{:checked => "checked", :name => "B", :type => "checkbox"}/
+                %label.css-label{:for => "B"}
+              %td{:colspan => "2"}
+                %p Requires future attention
+              %td
+                %input#C.css-checkboxred{:checked => "checked", :name => "C", :type => "checkbox"}/
+                %label.css-labelred{:for => "C"}
+              %td{:colspan => "2"}
+                %p Requires immediate attention
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "26"
+    %tr
+      %td{:colspan => "3"}
+        %p Email:
+        %input#email.inputUnderline{:style => "width: 91%;", :value => @vehicle_report_card.customer_email}
+      %td{:colspan => "6"}  
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "27"
+    %tr
+      %td{:colspan => "3"}
+        %p Year/Make/Model:
+        %input#year.inputUnderline{:style => "width: 75%;"}/
+      %td{:colspan => "2", :rowspan => "9"}
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "11", height: "212"
+      %td{:colspan => "4", :rowspan => "13", :style => " vertical-align: top;"}
+        %p Ford Extended Service Plan
+        %input#D.css-checkboxSimple{:name => "D", :type => "checkbox"}/
+        %label.css-labelSimple{:for => "D"}
+          YES
+        %input#E.css-checkboxSimple{:name => "E", :type => "checkbox"}/
+        %label.css-labelSimple{:for => "E"}
+          NO
+        = render 'vechicle_components/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "26"
+    %tr
+      %td{:colspan => "2"}
+        %p VIN:
+        %input#vin.inputUnderline{:style => "width: 70%;", :value => @vehicle_report_card.vehicle_identification_number}
+      %td
+        %p Plate #:
+        %input#plate.inputUnderline{:style => "width: 56%;"}/
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "26"
+    %tr
+      %td{:colspan => "3"}
+        %p Odometer:
+        %input#odometer.inputUnderline{:value => @vehicle_report_card.odometer}
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "26"
+    %tr
+      %td{:colspan => "2"}
+        %input#A60.css-checkboxSimple{:checked => "checked", :name => "A60", :type => "checkbox"}/
+        %label.css-labelSimple{:for => "A60"} Owner’s Guide checked and updated
+      %td{:rowspan => "2"}
+        %input#A61.css-checkboxSimple{:checked => "checked", :name => "A61", :type => "checkbox"}/
+        %label.css-labelSimple{:for => "A61"} Reset Oil life monitor
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "27"
+    %tr
+      %td{:colspan => "3", :rowspan => "2"}
+        %input#A62.css-checkboxSimple{:checked => "checked", :name => "A62", :type => "checkbox"}/
+        %label.css-labelSimple{:for => "A62"} Checked and completed open field service actions(recalls)
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "1"
+    %tr
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "25"
+    %tr
+      %td{:colspan => "3"}
+      %td
+    %tr
+      %td{:colspan => "3"}
+      %td
+    %tr
+      %td{:colspan => "3"}
+        = wicked_pdf_image_tag 'pdf/small-logo.png'
+        %p #:
+        %input#numb.inputUnderline{:style => "width: 50px;"}/
+        %p Service Balance:
+        %input#serv.inputUnderline{:style => "width:50px"}/
+      %td
+    %tr
+      %td{:colspan => "4"}
+        = render 'scheduled_maintenance_items/pdf_form', f: f
+      %td{:rowspan => "4"}
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "10", height: "486"
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "266"
+    %tr
+      %td{:colspan => "4"}
+        = render 'fluid_levels/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "65"
+    %tr
+      %td{:colspan => "4"}
+        = render 'wiper_blades/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "47"
+    %tr
+      %td{:colspan => "4"}
+        = render 'batteries/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "108"
+    %tr
+      %td.headCell{:colspan => "9"} TIRE / BRAKE WEAR
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "21"
+    %tr
+      %td{:colspan => "6", :rowspan => "3", :style => " vertical-align: top;"}
+        = render 'tire_wear_indicates/pdf_form', f: f
+      %td{:colspan => "2", :rowspan => "3"}
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "12", height: "313"
+      %td
+        = render 'brake_wear_indicates/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "229"
+    %tr
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "332", height: "9"
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "9"
+    %tr
+      %td{:rowspan => "4", :style => " vertical-align: top;"}
+        = render 'next_maintenance_appointments/pdf_form', f: f
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "75"
+    %tr
+      %td{:colspan => "7"}
+        %p Tires should be replaced after six years regardless of treadwear, including the spare, even if it has not been used.
+      %td{:rowspan => "6"}
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "27"
+    %tr
+      %td{:colspan => "2"}
+        %p Service Advisor:
+        %input#serviceadv.inputUnderline{:value => @vehicle_report_card.service_advisor.try(:display_name)}
+      %td{:colspan => "5"}
+        %p Technician:
+        %input#tech.inputUnderline{:value => @vehicle_report_card.technician.try(:display_name)}
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "26"
+    %tr
+      %td{:colspan => "7"}
+        %p Comments:
+        %input#date1.inputUnderline{:style => "width:50%", :value => @vehicle_report_card.comments}
+      %td
+        = wicked_pdf_image_tag 'pdf/spacer.gif', width: "1", height: "29"

@@ -1,0 +1,10 @@
+- if current_user.admin?
+  .form-group
+    = f.label :dealership_id
+    = f.collection_select :dealership_id, Dealership.all, :id, :title , {prompt: true}, {class: 'form-control'}
+    .help-block
+      Cannot find a Dealership here?
+      = link_to 'Click', new_dealership_path
+      here to create one.
+- else
+  = f.hidden_field :dealership_id, value: current_dealership_id

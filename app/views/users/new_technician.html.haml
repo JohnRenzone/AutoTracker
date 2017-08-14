@@ -1,0 +1,18 @@
+= panel do
+  .panel-body
+    = form_for @user, url: create_technician_users_path do |f|
+      = render 'application/active_record_errors', object: @user
+      .form-group
+        %lable Username:
+        = f.text_field :username, autocomplete: :off, autofocus: true, required: true, placeholder: "eg: jhonsmith", class: 'form-control input-lg'
+        .help-block
+          Spaces and special characters not allowed.
+      .form-group
+        %lable Password:
+        = f.password_field :password, autocomplete: :off, required: true, minlength: 8, class: 'form-control input-lg'
+        .help-block
+          Minimum 8 characters.
+      = render 'application/dealership_field', f: f
+      = f.hidden_field :role, value: 'technician'
+      %button.btn.btn-primary.btn-lg{:type => "submit"} Create Technician
+      = link_to 'Cancel', technicians_users_path, class: 'btn btn-default btn-lg'

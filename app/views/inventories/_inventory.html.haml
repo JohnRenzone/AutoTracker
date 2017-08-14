@@ -1,0 +1,30 @@
+- if inventory
+  = panel context: 'success' do
+    .panel-heading
+      %strong
+        VIN Data
+    .panel-body
+      .row
+        .col-md-12
+          %h4
+            %strong
+              #{inventory.make} #{inventory.model} #{inventory.year}
+        .col-md-4
+          %p
+            - [:cam_type, :cylinders, :fuel_induction].each do |message|
+              %h5
+                #{t("activerecord.attributes.engine.#{message}")}:
+                %i #{inventory.engines.first.send(message) rescue nil}
+        .col-md-4
+          %p
+            - [:market].each do |message|
+              %h5
+                #{t("activerecord.attributes.vehicle_report_card.#{message}")}:
+                %i #{inventory.send(message)}
+        .col-md-4
+          %p
+            %h5
+              #{t("activerecord.attributes.transmission.gears")}:
+              %i #{inventory.transmissions.first.try(:gears)}
+  = link_to_previous_report(inventory.vin)
+

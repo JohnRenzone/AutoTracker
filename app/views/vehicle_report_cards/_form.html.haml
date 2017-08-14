@@ -1,0 +1,75 @@
+- if current_user.technician? && !@vehicle_report_card.to_be_reviewed?
+  = alert_box context: 'danger' do
+    Report has been already reviewed by service advisor. Updating the report has been disabled.
+= form_for (@vehicle_report_card), html: { class: "form-horizontal", name: "report_card", data: {jquery_validate: true} } do |f|
+  = render 'application/active_record_errors', object: @vehicle_report_card
+  %section
+    .row
+      .col-md-6
+        .form-group
+          = f.text_field :vehicle_identification_number, minlength: VehicleReportCard::VIN_LENGTH, maxlength: VehicleReportCard::VIN_LENGTH, required: true, placeholder: t('activerecord.attributes.vehicle_report_card.vehicle_identification_number'), class: 'form-control input-lg'
+        .form-group
+          .input-group
+            = f.number_field :odometer, placeholder: t('activerecord.attributes.vehicle_report_card.odometer'), class: 'form-control input-lg'
+            %span.input-group-btn
+              %button.btn.btn-default.btn-lg{:type => "button"} KM
+        .form-group
+          .input-group
+            = f.text_field :report_card_date, placeholder: t('activerecord.attributes.vehicle_report_card.report_card_date'), class: 'form-control input-lg datetimepicker'
+            %span.input-group-addon
+              %i.fa.fa-calendar
+        .form-group
+          - if can?(:send_pdf, @vehicle_report_card) && can?(:email_pdf, @vehicle_report_card) && !@vehicle_report_card.new_record?
+            .input-group
+              = f.email_field :customer_email, placeholder: t('activerecord.attributes.vehicle_report_card.customer_email'), class: 'form-control input-lg'
+              %span.input-group-btn
+                = link_to 'SEND', send_pdf_vehicle_report_card_path(@vehicle_report_card), class: 'btn btn-default btn-lg btn-block pT20 pB20', id: 'send_pdf', remote: true, class: 'btn btn-default btn-lg'
+          - else
+            = f.email_field :customer_email, placeholder: t('activerecord.attributes.vehicle_report_card.customer_email'), class: 'form-control input-lg'
+      .col-md-6
+        #vin-dataone-info
+          = render 'inventories/inventory', inventory: @vehicle_report_card.inventory
+  %input{:id => "record_type", :type => "hidden", :value => @vehicle_report_card.new_record? ? "new" : "edit" }/
+  %input{:id => "record_id", :type => "hidden", :value => @vehicle_report_card.id }/
+  .row.service-button.pdf-page
+    .col-md-6
+      = f.fields_for :scheduled_maintenance_item do |_f|
+        =  render 'scheduled_maintenance_items/form', f: _f
+    .col-md-6
+      = f.fields_for :fluid_level do |_f|
+        =  render 'fluid_levels/form', f: _f
+  .row.pdf-page
+    .col-md-6
+      = f.fields_for :wiper_blade do |_f|
+        =  render 'wiper_blades/form', f: _f
+    .col-md-6
+      = f.fields_for :battery do |_f|
+        =  render 'batteries/form', f: _f
+  %section.component
+    = f.fields_for :vehicle_component do |_f|
+      =  render 'vechicle_components/form', f: _f
+  %section.pdf-page
+    = f.fields_for :tire_wear_indicate do |_f|
+      =  render 'tire_wear_indicates/form', f: _f
+  %section
+    = f.fields_for :brake_wear_indicate do |_f|
+      =  render 'brake_wear_indicates/form', f: _f
+  %section.component
+    = f.fields_for :next_maintenance_appointment do |_f|
+      =  render 'next_maintenance_appointments/form', f: _f
+  .form-group
+    = f.select :service_advisor_id, @service_advisors.collect {|p| [ p.display_name, p.id ] }, {prompt: "Please Select #{t('activerecord.attributes.vehicle_report_card.service_advisor_id')}"}, class: 'form-control input-lg'
+  .form-group
+    - selected_technician_id = @vehicle_report_card.technician_id || (current_user.technician? ? current_user.id : nil)
+    = f.select :technician_id, @technicians.collect {|p| [ p.display_name, p.id ] }, {selected: selected_technician_id,  prompt: "Please Select #{t('activerecord.attributes.vehicle_report_card.technician_id')}"}, class: 'form-control input-lg'
+  .form-group
+    = f.text_field :comments,placeholder: t('activerecord.attributes.vehicle_report_card.comments'), class: 'form-control input-lg'
+  .row.pB50#pdf_friendly
+    .col-md-4.col-sm-4.col-xs-4
+      - if current_user.technician? && (@vehicle_report_card.to_be_reviewed? or @vehicle_report_card.new_record?)
+        %button.btn.btn-warning.btn-lg.btn-block.pT20.pB20{:id => "btn-report-card",:type => "submit"} Submit
+    .col-md-4.col-sm-4.col-xs-4
+      - if can?(:send_pdf, @vehicle_report_card) && can?(:email_pdf, @vehicle_report_card)
+        = link_to 'E-mail PDF', send_pdf_vehicle_report_card_path(@vehicle_report_card), class: 'btn btn-default btn-lg btn-block pT20 pB20', id: 'send_pdf', remote: true
+    .col-md-4.col-sm-4.col-xs-4
+      = link_to 'Cancel', root_path, class: 'btn btn-default btn-lg btn-block pT20 pB20'
